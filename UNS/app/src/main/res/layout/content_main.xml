@@ -7,11 +7,93 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="rs.ac.ftn.uns.MainActivity"
     tools:showIn="@layout/activity_main">
-
+    <!--
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/text_margin"
         android:text="@string/large_text" />
+    -->
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:columnCount="4"
+        android:rowCount="3"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/newsButton"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:backgroundTint="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:tint="@color/colorPrimaryDark"
+            app:srcCompat="@drawable/ic_news" />
+
+        <ImageButton
+            android:id="@+id/busButton"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:backgroundTint="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:tint="@color/colorPrimaryDark"
+            app:srcCompat="@drawable/ic_bus" />
+
+        <ImageButton
+            android:id="@+id/mapButton"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:backgroundTint="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:tint="@color/colorPrimaryDark"
+            app:srcCompat="@drawable/ic_map" />
+
+        <ImageButton
+            android:id="@+id/eventsButton"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:backgroundTint="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:tint="@color/colorPrimaryDark"
+            app:srcCompat="@drawable/ic_events" />
+
+        <ImageButton
+            android:id="@+id/peopleButton"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:backgroundTint="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:tint="@color/colorPrimaryDark"
+            app:srcCompat="@drawable/ic_people" />
+
+        <ImageButton
+            android:id="@+id/librariesButton"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:backgroundTint="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:tint="@color/colorPrimaryDark"
+            app:srcCompat="@drawable/ic_libraries" />
+
+        <ImageButton
+            android:id="@+id/diningButton"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:backgroundTint="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:tint="@color/colorPrimaryDark"
+            app:srcCompat="@drawable/ic_dining" />
+
+        <ImageButton
+            android:id="@+id/qrButton"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:backgroundTint="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:tint="@color/colorPrimaryDark"
+            app:srcCompat="@drawable/ic_qr" />
+
+    </GridLayout>
 
 </android.support.v4.widget.NestedScrollView>
