@@ -19,6 +19,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".BusRoutesActivity"
+            android:label="@string/title_activity_bus_routes" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="rs.ac.ftn.uns.MainActivity" />
+        <activity
+            android:name=".NotableLocationsActivity"
+            android:label="@string/title_activity_notable_locations">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="rs.ac.ftn.uns.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

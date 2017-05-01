@@ -32,7 +32,7 @@
             app:srcCompat="@drawable/ic_news" />
 
         <ImageButton
-            android:id="@+id/busButton"
+            android:id="@+id/busRoutesButton"
             android:layout_width="85dp"
             android:layout_height="85dp"
             android:backgroundTint="@android:color/transparent"
@@ -41,7 +41,7 @@
             app:srcCompat="@drawable/ic_bus" />
 
         <ImageButton
-            android:id="@+id/mapButton"
+            android:id="@+id/notableLocationsButton"
             android:layout_width="85dp"
             android:layout_height="85dp"
             android:backgroundTint="@android:color/transparent"
