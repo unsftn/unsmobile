@@ -1,16 +1,22 @@
 package rs.ac.ftn.uns;
 
+import android.content.Intent;
 import android.graphics.Color;
+import android.net.Uri;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
 
 import java.sql.SQLException;
@@ -33,8 +39,21 @@ public class BusRoutesActivity extends FragmentActivity implements OnMapReadyCal
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
+        Button link = (Button) findViewById(R.id.route_link);
+        link.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goToUrl("http://www.gspns.co.rs/red-voznje/gradski");
+            }
+        });
     }
 
+    private void goToUrl (String url) {
+        Uri uriUrl = Uri.parse(url);
+        Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
+        startActivity(launchBrowser);
+    }
 
     /**
      * Manipulates the map once available.
@@ -50,29 +69,45 @@ public class BusRoutesActivity extends FragmentActivity implements OnMapReadyCal
         mMap = googleMap;
 
         DatabaseHelper db = DatabaseHelper.getInstance(this);
-        List<BusRoute> list = null;
-        try {
-            list = db.getBusRouteDao().queryForAll();
-            BusRoute br = list.get(0);
-            PolylineOptions poptions = new PolylineOptions();
+        List<BusRoute> bRList = null;
 
-            RoutePoint first = null;
-            for(RoutePoint gp : br.getRoutePoints()){
-                if(first == null)
-                    first =  gp;
-                poptions.add(new LatLng(gp.getLatitude(), gp.getLongitude()));
+        try {
+            bRList = db.getBusRouteDao().queryForAll();
+
+            for(BusRoute br: bRList){
+                PolylineOptions poptions = new PolylineOptions();
+
+                RoutePoint first = null;
+                for(RoutePoint gp : br.getRoutePoints()){
+                    if(first == null)
+                        first =  gp;
+                    poptions.add(new LatLng(gp.getLatitude(), gp.getLongitude()));
+                }
+
+                poptions.add(new LatLng(first.getLatitude(),first.getLongitude()));
+                poptions.width(5).color(Color.CYAN).geodesic(true);
+                Polyline p = mMap.addPolyline(poptions);
+                p.setClickable(true);
+                p.setTag(br);
             }
 
-            poptions.add(new LatLng(first.getLatitude(),first.getLongitude()));
-            poptions.width(5).color(Color.CYAN).geodesic(true);
-            mMap.addPolyline(poptions);
-            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(first.getLatitude(),first.getLongitude()), 18));
+            //TODO determine the right dot! Location?
+            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(45.245372, 19.834229), 18));
 
+            mMap.setOnPolylineClickListener(new GoogleMap.OnPolylineClickListener() {
+                @Override
+                public void onPolylineClick(Polyline polyline) {
+                    BusRoute br = (BusRoute) polyline.getTag();
+                    TextView tv = (TextView) findViewById(R.id.route_name);
 
-            List<NotableLocation> nllist = db.getNotableLocationDao().queryForAll();
-            NotableLocation home = nllist.get(0);
+                    String str = getResources().getString(R.string.route);
+                    str+= " " + br.getName();
+                    tv.setText(str);
 
-            mMap.addMarker(new MarkerOptions().position(new LatLng(home.getLatitude(),home.getLongitude())).title(home.getName()).snippet(home.getInfo()));
+                    LinearLayout lL = (LinearLayout) findViewById(R.id.route_info);
+                    lL.setVisibility(View.VISIBLE);
+                }
+            });
 
         } catch (SQLException e) {
             e.printStackTrace();

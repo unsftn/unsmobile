@@ -10,6 +10,12 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+import java.sql.SQLException;
+import java.util.List;
+
+import rs.ac.ftn.uns.database.DatabaseHelper;
+import rs.ac.ftn.uns.model.NotableLocation;
+
 public class NotableLocationsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
@@ -42,5 +48,18 @@ public class NotableLocationsActivity extends FragmentActivity implements OnMapR
         LatLng sydney = new LatLng(-34, 151);
         mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+
+        DatabaseHelper db = DatabaseHelper.getInstance(this);
+        List<NotableLocation> nLlist = null;
+        try {
+            nLlist = db.getNotableLocationDao().queryForAll();
+            NotableLocation home = nLlist.get(0);
+
+            mMap.addMarker(new MarkerOptions().position(new LatLng(home.getLatitude(),home.getLongitude())).title(home.getName()).snippet(home.getInfo()));
+            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(home.getLatitude(),home.getLongitude()), 18));
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
     }
 }
