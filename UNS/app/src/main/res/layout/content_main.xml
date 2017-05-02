@@ -66,7 +66,7 @@
                     android:backgroundTint="@android:color/transparent"
                     android:scaleType="fitXY"
                     android:tint="@android:color/black"
-                    app:srcCompat="@drawable/ic_bus" />
+                    app:srcCompat="@drawable/ic_bus"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="35dp"
@@ -237,6 +237,36 @@
                     android:textColor="@android:color/black"
                     android:textStyle="bold"
                     android:text="QR Scan"/>
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.25">
+
+                <ImageButton
+                    android:id="@+id/voteButton"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:background="@android:color/transparent"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    android:tint="@android:color/black"
+                    app:srcCompat="@drawable/ic_science_festival" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:textAlignment="center"
+                    android:gravity="top"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:text="Science festival"/>
             </LinearLayout>
         </TableRow>
         <TableRow
