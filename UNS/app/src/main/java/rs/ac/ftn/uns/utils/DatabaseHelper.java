@@ -1,4 +1,4 @@
-package rs.ac.ftn.uns.database;
+package rs.ac.ftn.uns.utils;
 
 
 import android.content.Context;

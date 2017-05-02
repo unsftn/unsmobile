@@ -86,7 +86,7 @@
             app:srcCompat="@drawable/ic_dining" />
 
         <ImageButton
-            android:id="@+id/qrButton"
+            android:id="@+id/voteButton"
             android:layout_width="85dp"
             android:layout_height="85dp"
             android:backgroundTint="@android:color/transparent"

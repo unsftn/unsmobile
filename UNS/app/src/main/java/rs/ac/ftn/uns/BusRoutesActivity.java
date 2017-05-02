@@ -15,15 +15,13 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
 
 import java.sql.SQLException;
 import java.util.List;
 
-import rs.ac.ftn.uns.database.DatabaseHelper;
-import rs.ac.ftn.uns.model.NotableLocation;
+import rs.ac.ftn.uns.utils.DatabaseHelper;
 import rs.ac.ftn.uns.model.RoutePoint;
 import rs.ac.ftn.uns.model.BusRoute;
 

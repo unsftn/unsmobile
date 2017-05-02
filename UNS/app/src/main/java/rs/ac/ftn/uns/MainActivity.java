@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, BusRoutesActivity.class);
                 startActivity(intent);
-
             }
         });
 
@@ -46,9 +45,18 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, NotableLocationsActivity.class);
                 startActivity(intent);
-
             }
         });
+
+        ImageButton buttonVo = (ImageButton) findViewById(R.id.voteButton);
+        buttonVo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, VotingActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     @Override
