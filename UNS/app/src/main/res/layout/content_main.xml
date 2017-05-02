@@ -268,6 +268,16 @@
                     android:textStyle="bold"
                     android:text="Science festival"/>
             </LinearLayout>
+            <!-- Used for uniformly fitting -->
+            <View
+                android:layout_weight="0.25">
+            </View>
+            <View
+                android:layout_weight="0.25">
+            </View>
+            <View
+                android:layout_weight="0.25">
+            </View>
         </TableRow>
         <TableRow
             android:background="@color/colorPrimaryDark"
