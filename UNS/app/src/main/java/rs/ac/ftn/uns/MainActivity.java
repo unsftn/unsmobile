@@ -71,6 +71,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        ImageButton buttonAbout = (ImageButton) findViewById(R.id.aboutButton);
+        buttonAbout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, AboutActivity.class);
+                startActivity(intent);
+            }
+        });
+
         /*
         ImageButton buttonScienceFestival = (ImageButton) findViewById(R.id.voteButton);
         buttonQr.setOnClickListener(new View.OnClickListener() {

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/about_university"
+        android:icon="@drawable/ic_libraries"
+        android:title="@string/title_university" />
+
+    <item
+        android:id="@+id/about_application"
+        android:icon="@drawable/ic_about"
+        android:title="@string/title_application" />
+
+</menu>
