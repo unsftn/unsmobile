@@ -14,86 +14,329 @@
         android:layout_margin="@dimen/text_margin"
         android:text="@string/large_text" />
     -->
-    <GridLayout
-        android:layout_width="wrap_content"
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:columnCount="4"
-        android:rowCount="3"
-        android:orientation="horizontal">
+        android:shrinkColumns="4">
 
-        <ImageButton
-            android:id="@+id/newsButton"
-            android:layout_width="85dp"
-            android:layout_height="85dp"
-            android:backgroundTint="@android:color/transparent"
-            android:scaleType="fitXY"
-            android:tint="@color/colorPrimaryDark"
-            app:srcCompat="@drawable/ic_news" />
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp">
 
-        <ImageButton
-            android:id="@+id/busRoutesButton"
-            android:layout_width="85dp"
-            android:layout_height="85dp"
-            android:backgroundTint="@android:color/transparent"
-            android:scaleType="fitXY"
-            android:tint="@color/colorPrimaryDark"
-            app:srcCompat="@drawable/ic_bus" />
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.25">
 
-        <ImageButton
-            android:id="@+id/notableLocationsButton"
-            android:layout_width="85dp"
-            android:layout_height="85dp"
-            android:backgroundTint="@android:color/transparent"
-            android:scaleType="fitXY"
-            android:tint="@color/colorPrimaryDark"
-            app:srcCompat="@drawable/ic_map" />
+                <ImageButton
+                    android:id="@+id/newsButton"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:backgroundTint="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    android:tint="@android:color/black"
+                    app:srcCompat="@drawable/ic_news" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:textAlignment="center"
+                    android:gravity="top"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:text="News"/>
+            </LinearLayout>
 
-        <ImageButton
-            android:id="@+id/eventsButton"
-            android:layout_width="85dp"
-            android:layout_height="85dp"
-            android:backgroundTint="@android:color/transparent"
-            android:scaleType="fitXY"
-            android:tint="@color/colorPrimaryDark"
-            app:srcCompat="@drawable/ic_events" />
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.25">
 
-        <ImageButton
-            android:id="@+id/peopleButton"
-            android:layout_width="85dp"
-            android:layout_height="85dp"
-            android:backgroundTint="@android:color/transparent"
-            android:scaleType="fitXY"
-            android:tint="@color/colorPrimaryDark"
-            app:srcCompat="@drawable/ic_people" />
+                <ImageButton
+                    android:id="@+id/busRoutesButton"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:background="@android:color/transparent"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    android:tint="@android:color/black"
+                    app:srcCompat="@drawable/ic_bus" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:textAlignment="center"
+                    android:gravity="top"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:text="Bus routes"/>
+            </LinearLayout>
 
-        <ImageButton
-            android:id="@+id/librariesButton"
-            android:layout_width="85dp"
-            android:layout_height="85dp"
-            android:backgroundTint="@android:color/transparent"
-            android:scaleType="fitXY"
-            android:tint="@color/colorPrimaryDark"
-            app:srcCompat="@drawable/ic_libraries" />
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/relaGrid"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.25">
 
-        <ImageButton
-            android:id="@+id/diningButton"
-            android:layout_width="85dp"
-            android:layout_height="85dp"
-            android:backgroundTint="@android:color/transparent"
-            android:scaleType="fitXY"
-            android:tint="@color/colorPrimaryDark"
-            app:srcCompat="@drawable/ic_dining" />
+                <ImageButton
+                    android:id="@+id/notableLocationsButton"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:background="@android:color/transparent"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    android:tint="@android:color/black"
+                    app:srcCompat="@drawable/ic_map" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:textAlignment="center"
+                    android:gravity="top"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:text="Notable locations"/>
+            </LinearLayout>
 
-        <ImageButton
-            android:id="@+id/qrButton"
-            android:layout_width="85dp"
-            android:layout_height="85dp"
-            android:backgroundTint="@android:color/transparent"
-            android:scaleType="fitXY"
-            android:tint="@color/colorPrimaryDark"
-            app:srcCompat="@drawable/ic_qr" />
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.25">
 
-    </GridLayout>
+                <ImageButton
+                    android:id="@+id/eventsButton"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:background="@android:color/transparent"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    android:tint="@android:color/black"
+                    app:srcCompat="@drawable/ic_events" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:textAlignment="center"
+                    android:gravity="top"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:text="Events"/>
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.25">
+
+                <ImageButton
+                    android:id="@+id/peopleButton"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:background="@android:color/transparent"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    android:tint="@android:color/black"
+                    app:srcCompat="@drawable/ic_people" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:textAlignment="center"
+                    android:gravity="top"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:text="People"/>
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.25">
+
+                <ImageButton
+                    android:id="@+id/librariesButton"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:background="@android:color/transparent"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    android:tint="@android:color/black"
+                    app:srcCompat="@drawable/ic_libraries" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:textAlignment="center"
+                    android:gravity="top"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:text="Libraries"/>
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.25">
+
+                <ImageButton
+                    android:id="@+id/diningButton"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:background="@android:color/transparent"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    android:tint="@android:color/black"
+                    app:srcCompat="@drawable/ic_dining" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:textAlignment="center"
+                    android:gravity="top"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:text="Dining"/>
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.25">
+
+                <ImageButton
+                    android:id="@+id/qrButton"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:background="@android:color/transparent"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    android:tint="@android:color/black"
+                    app:srcCompat="@drawable/ic_qr" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:textAlignment="center"
+                    android:gravity="top"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:text="QR Scan"/>
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/linksButton"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:backgroundTint="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    android:tint="@android:color/white"
+                    app:srcCompat="@drawable/ic_links" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:textAlignment="center"
+                    android:gravity="top"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:text="Links"/>
+            </LinearLayout>
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/websiteButton"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:backgroundTint="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    android:tint="@android:color/white"
+                    app:srcCompat="@drawable/ic_web" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:textAlignment="center"
+                    android:gravity="top"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:text="Full website"/>
+            </LinearLayout>
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/aboutButton"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:backgroundTint="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    android:tint="@android:color/white"
+                    app:srcCompat="@drawable/ic_about" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:textAlignment="center"
+                    android:gravity="top"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:text="About"/>
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:background="@color/colorPrimaryDark">
+            <LinearLayout android:orientation="vertical">
+                <TextView
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="TOP OF PAGE"/>
+                <!--
+                <TextView
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Copyrignt ©2017. University of Novi Sad. All rights reserved."/>
+                    -->
+            </LinearLayout>
+
+
+        </TableRow>
+    </TableLayout>
 
 </android.support.v4.widget.NestedScrollView>
