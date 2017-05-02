@@ -1,6 +1,7 @@
 package rs.ac.ftn.uns;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -11,6 +12,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.ImageButton;
+
+import java.io.Console;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -48,6 +51,36 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        ImageButton buttonWebsite = (ImageButton) findViewById(R.id.websiteButton);
+        buttonWebsite.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String url = "http://www.uns.ac.rs/index.php";
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                startActivity(i);
+            }
+        });
+
+        ImageButton buttonPeople = (ImageButton) findViewById(R.id.peopleButton);
+        buttonPeople.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, PeopleActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        /*
+        ImageButton buttonScienceFestival = (ImageButton) findViewById(R.id.voteButton);
+        buttonQr.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ScienceFestivalActivity.class);
+                startActivity(intent);
+            }
+        });
+        */
     }
 
     @Override
