@@ -22,8 +22,9 @@
         <TableRow
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:layout_marginLeft="40dp"
-            android:layout_marginRight="40dp">
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp">
 
             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="fill_parent"
@@ -130,10 +131,11 @@
                     android:text="Events"/>
             </LinearLayout>
         </TableRow>
-
         <TableRow
-            android:layout_marginLeft="40dp"
-            android:layout_marginRight="40dp">
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp">
 
             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="fill_parent"
@@ -240,29 +242,15 @@
             </LinearLayout>
         </TableRow>
         <TableRow
-            android:layout_marginLeft="40dp"
-            android:layout_marginRight="40dp">
-
-            <!-- Used for uniformly fitting
-            <View
-                android:layout_weight="0.25">
-            </View>
-            <View
-                android:layout_weight="0.25">
-            </View>
-            <View
-                android:layout_weight="0.25">
-            </View>
-            -->
-        </TableRow>
-        <TableRow
             android:background="@color/colorPrimaryDark"
-            android:layout_marginTop="20dp">
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp">
 
             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_weight="0.33">
 
                 <ImageButton
                     android:id="@+id/linksButton"
@@ -286,7 +274,8 @@
             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_weight="0.33">
 
                 <ImageButton
                     android:id="@+id/websiteButton"
@@ -310,7 +299,8 @@
             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_weight="0.33">
 
                 <ImageButton
                     android:id="@+id/aboutButton"
@@ -332,27 +322,43 @@
                     android:text="About"/>
             </LinearLayout>
         </TableRow>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/white"/>
         <TableRow
-            android:background="@color/colorPrimaryDark">
-            <LinearLayout android:orientation="vertical">
-                <TextView
-                    android:textColor="@android:color/white"
-                    android:layout_marginTop="20dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="TOP OF PAGE"/>
-                <!--
-                <TextView
-                    android:textColor="@android:color/white"
-                    android:layout_marginTop="20dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="Copyrignt ©2017. University of Novi Sad. All rights reserved."/>
-                    -->
-            </LinearLayout>
-
-
+            android:background="@color/colorPrimaryDark"
+            android:layout_height="60dp"
+            android:paddingTop="10dp"
+            android:minHeight="60dp">
+            <View
+                android:layout_weight="0.25"
+                android:paddingLeft="20dp"
+                android:layout_marginRight="20dp">
+            </View>
+            <ImageView
+                android:layout_weight="0.5"
+                android:layout_height="60dp"
+                android:layout_width="60dp"
+                android:src="@drawable/uns_logo"/>
+            <View
+                android:layout_weight="0.25">
+            </View>
         </TableRow>
+        <TableRow
+            android:background="@color/colorPrimaryDark"
+            android:paddingTop="10dp"
+            android:paddingBottom="30dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:textColor="@android:color/white"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:text="2017 ©\nUNS\nNovi Sad\nSerbia"
+                android:layout_gravity="center_horizontal"/>
+        </TableRow>
+
+
     </TableLayout>
 
 </android.support.v4.widget.NestedScrollView>
