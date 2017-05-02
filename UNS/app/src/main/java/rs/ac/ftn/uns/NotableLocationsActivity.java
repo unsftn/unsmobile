@@ -13,7 +13,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import java.sql.SQLException;
 import java.util.List;
 
-import rs.ac.ftn.uns.database.DatabaseHelper;
+import rs.ac.ftn.uns.utils.DatabaseHelper;
 import rs.ac.ftn.uns.model.NotableLocation;
 
 public class NotableLocationsActivity extends FragmentActivity implements OnMapReadyCallback {
