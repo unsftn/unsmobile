@@ -33,14 +33,14 @@
                 android:layout_weight="0.25">
 
                 <ImageButton
-                    android:id="@+id/newsButton"
+                    android:id="@+id/facultiesButton"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_gravity="center_horizontal"
                     android:background="@android:color/transparent"
                     android:backgroundTint="@android:color/transparent"
                     android:scaleType="fitXY"
-                    app:srcCompat="@drawable/ic_news" />
+                    app:srcCompat="@drawable/ic_faculties" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="35dp"
@@ -48,7 +48,7 @@
                     android:gravity="top"
                     android:textStyle="bold"
                     android:textColor="@color/colorIcon"
-                    android:text="News"/>
+                    android:text="Faculties"/>
             </LinearLayout>
 
             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
