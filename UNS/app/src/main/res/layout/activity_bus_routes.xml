@@ -49,7 +49,7 @@
                 android:layout_margin="20dp"
                 android:textColor="@android:color/white"
                 android:textAlignment="center"
-                android:background="@android:color/holo_red_dark"
+                android:background="#96fa0201"
                 android:layout_height="50dp"
                 android:layout_width="50dp"
                 android:layout_weight="0.33"/>
@@ -59,7 +59,7 @@
                 android:layout_margin="20dp"
                 android:textColor="@android:color/white"
                 android:textAlignment="center"
-                android:background="@android:color/holo_purple"
+                android:background="#968559ab"
                 android:layout_height="50dp"
                 android:layout_width="50dp"
                 android:layout_weight="0.33"/>
@@ -69,7 +69,7 @@
                 android:layout_margin="20dp"
                 android:textColor="@android:color/white"
                 android:textAlignment="center"
-                android:background="#867164"
+                android:background="#96867164"
                 android:layout_height="50dp"
                 android:layout_width="50dp"
                 android:layout_weight="0.33"/>
@@ -86,7 +86,7 @@
                 android:layout_margin="20dp"
                 android:textColor="@android:color/white"
                 android:textAlignment="center"
-                android:background="#fb8300"
+                android:background="#96fb8300"
                 android:layout_height="50dp"
                 android:layout_width="50dp"
                 android:layout_weight="0.33"/>
@@ -96,7 +96,7 @@
                 android:layout_margin="20dp"
                 android:textColor="@android:color/white"
                 android:textAlignment="center"
-                android:background="#5e8747"
+                android:background="#965e8747"
                 android:layout_height="50dp"
                 android:layout_width="50dp"
                 android:layout_weight="0.33"/>
@@ -106,7 +106,7 @@
                 android:layout_margin="20dp"
                 android:textColor="@android:color/white"
                 android:textAlignment="center"
-                android:background="#00a859"
+                android:background="#9600a859"
                 android:layout_height="50dp"
                 android:layout_width="50dp"
                 android:layout_weight="0.33"/>

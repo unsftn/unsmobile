@@ -24,6 +24,15 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        ImageButton buttonFaculties = (ImageButton) findViewById(R.id.facultiesButton);
+        buttonFaculties.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, FacultiesActivity.class);
+                startActivity(intent);
+            }
+        });
+
         ImageButton buttonBR = (ImageButton) findViewById(R.id.busRoutesButton);
         buttonBR.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -64,8 +64,17 @@
         </activity>
         <activity
             android:name=".BusRoutesActivity"
+            android:label="@string/title_activity_bus_routes"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="rs.ac.ftn.uns.MainActivity" />
+        </activity>
+        <activity
+            android:name=".FacultiesActivity"
+            android:label="@string/title_activity_faculties"
             android:parentActivityName=".MainActivity"
-            android:label="@string/title_activity_bus_routes">
+            android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="rs.ac.ftn.uns.MainActivity" />

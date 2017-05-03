@@ -129,4 +129,18 @@ The University of Novi Sad builds its future together with other institutions th
     <string name="english_localization">English</string>
     <string name="serbian_localization">Serbian</string>
     <string name="bus_routes_headline_title">Related bus route numbers:</string>
+    <string name="title_activity_faculties">UNS Faculties</string>
+    <string name="ftn_title">Faculty of Technical Sciences</string>
+    <string name="pmf_title">Faculty of Sciences</string>
+    <string name="law_title">Faculty of Law</string>
+    <string name="agriculture_title">Faculty of Agriculture</string>
+    <string name="philosophy_title">Faculty of Philosophy</string>
+    <string name="economics_title">Faculty of Economics</string>
+    <string name="technology_title">Faculty of Technology</string>
+    <string name="medicine_title">Faculty of Medicine</string>
+    <string name="art_academy_title">Academy of Arts</string>
+    <string name="civil_engineering_title">Faculty of Civil Engineering</string>
+    <string name="pupin_title">"Mihajlo Pupin" Technical Faculty in Zrenjanin</string>
+    <string name="dif_title">Faculty of Sport and Physical Education</string>
+    <string name="education_title">Faculty of Education</string>
 </resources>
