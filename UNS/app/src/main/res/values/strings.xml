@@ -126,4 +126,6 @@ The University of Novi Sad builds its future together with other institutions th
     <string name="title_home">Home</string>
     <string name="title_activity_people">People</string>
     <string name="title_activity_about">About</string>
+    <string name="english_localization">English</string>
+    <string name="serbian_localization">Serbian</string>
 </resources>

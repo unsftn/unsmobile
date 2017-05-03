@@ -34,13 +34,12 @@
 
                 <ImageButton
                     android:id="@+id/newsButton"
-                    android:layout_width="85dp"
-                    android:layout_height="85dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
                     android:layout_gravity="center_horizontal"
                     android:background="@android:color/transparent"
                     android:backgroundTint="@android:color/transparent"
                     android:scaleType="fitXY"
-                    android:tint="@android:color/black"
                     app:srcCompat="@drawable/ic_news" />
                 <TextView
                     android:layout_width="match_parent"
@@ -48,7 +47,7 @@
                     android:textAlignment="center"
                     android:gravity="top"
                     android:textStyle="bold"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/colorIcon"
                     android:text="News"/>
             </LinearLayout>
 
@@ -60,20 +59,19 @@
 
                 <ImageButton
                     android:id="@+id/busRoutesButton"
-                    android:layout_width="85dp"
-                    android:layout_height="85dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
                     android:background="@android:color/transparent"
                     android:layout_gravity="center_horizontal"
                     android:backgroundTint="@android:color/transparent"
                     android:scaleType="fitXY"
-                    android:tint="@android:color/black"
                     app:srcCompat="@drawable/ic_bus"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="35dp"
                     android:textAlignment="center"
                     android:gravity="top"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/colorIcon"
                     android:textStyle="bold"
                     android:text="Bus routes"/>
             </LinearLayout>
@@ -87,20 +85,19 @@
 
                 <ImageButton
                     android:id="@+id/notableLocationsButton"
-                    android:layout_width="85dp"
-                    android:layout_height="85dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
                     android:background="@android:color/transparent"
                     android:layout_gravity="center_horizontal"
                     android:backgroundTint="@android:color/transparent"
                     android:scaleType="fitXY"
-                    android:tint="@android:color/black"
                     app:srcCompat="@drawable/ic_map" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="35dp"
                     android:textAlignment="center"
                     android:gravity="top"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/colorIcon"
                     android:textStyle="bold"
                     android:text="Notable locations"/>
             </LinearLayout>
@@ -113,20 +110,19 @@
 
                 <ImageButton
                     android:id="@+id/eventsButton"
-                    android:layout_width="85dp"
-                    android:layout_height="85dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
                     android:background="@android:color/transparent"
                     android:layout_gravity="center_horizontal"
                     android:backgroundTint="@android:color/transparent"
                     android:scaleType="fitXY"
-                    android:tint="@android:color/black"
                     app:srcCompat="@drawable/ic_events" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="35dp"
                     android:textAlignment="center"
                     android:gravity="top"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/colorIcon"
                     android:textStyle="bold"
                     android:text="Events"/>
             </LinearLayout>
@@ -145,20 +141,19 @@
 
                 <ImageButton
                     android:id="@+id/peopleButton"
-                    android:layout_width="85dp"
-                    android:layout_height="85dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
                     android:background="@android:color/transparent"
                     android:layout_gravity="center_horizontal"
                     android:backgroundTint="@android:color/transparent"
                     android:scaleType="fitXY"
-                    android:tint="@android:color/black"
                     app:srcCompat="@drawable/ic_people" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="35dp"
                     android:textAlignment="center"
                     android:gravity="top"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/colorIcon"
                     android:textStyle="bold"
                     android:text="People"/>
             </LinearLayout>
@@ -171,20 +166,19 @@
 
                 <ImageButton
                     android:id="@+id/librariesButton"
-                    android:layout_width="85dp"
-                    android:layout_height="85dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
                     android:background="@android:color/transparent"
                     android:layout_gravity="center_horizontal"
                     android:backgroundTint="@android:color/transparent"
                     android:scaleType="fitXY"
-                    android:tint="@android:color/black"
                     app:srcCompat="@drawable/ic_libraries" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="35dp"
                     android:textAlignment="center"
                     android:gravity="top"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/colorIcon"
                     android:textStyle="bold"
                     android:text="Libraries"/>
             </LinearLayout>
@@ -197,20 +191,19 @@
 
                 <ImageButton
                     android:id="@+id/diningButton"
-                    android:layout_width="85dp"
-                    android:layout_height="85dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
                     android:background="@android:color/transparent"
                     android:layout_gravity="center_horizontal"
                     android:backgroundTint="@android:color/transparent"
                     android:scaleType="fitXY"
-                    android:tint="@android:color/black"
                     app:srcCompat="@drawable/ic_dining" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="35dp"
                     android:textAlignment="center"
                     android:gravity="top"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/colorIcon"
                     android:textStyle="bold"
                     android:text="Dining"/>
             </LinearLayout>
@@ -223,20 +216,19 @@
 
                 <ImageButton
                     android:id="@+id/voteButton"
-                    android:layout_width="85dp"
-                    android:layout_height="85dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
                     android:background="@android:color/transparent"
                     android:layout_gravity="center_horizontal"
                     android:backgroundTint="@android:color/transparent"
                     android:scaleType="fitXY"
-                    android:tint="@android:color/black"
                     app:srcCompat="@drawable/ic_science_festival" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="35dp"
                     android:textAlignment="center"
                     android:gravity="top"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/colorIcon"
                     android:textStyle="bold"
                     android:text="Science festival"/>
             </LinearLayout>
