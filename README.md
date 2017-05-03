@@ -5,7 +5,8 @@
 Mobile application which is able to provide necessary information to students and employees. Using this application you are able to find all relevant places and information related to campus. 
 
 ### Screenshots:
-![uns mobile app home page](http://image.prntscr.com/image/0fc2354b119b4860a95b02a0b0da6267.png)
+![uns mobile app home page](https://cloud.githubusercontent.com/assets/15141614/25685675/743c95be-3069-11e7-9e75-ce21f5bc4c1e.png)
+![uns mobile app faculties page](https://cloud.githubusercontent.com/assets/15141614/25685676/743f29dc-3069-11e7-90e1-938a6e1666ed.png)
 
 ### Developer team:
   [Aleksandar Bosnjak] (https://github.com/aleksandarbos)
