@@ -81,6 +81,7 @@ public class MainActivity extends AppCompatActivity {
             SharedPreferences.Editor editor = sharedPreferences.edit();
             editor.putString(localization, language_locale_en);
             editor.commit();
+            initListeners();
 
             return true;
         }
@@ -100,6 +101,7 @@ public class MainActivity extends AppCompatActivity {
             SharedPreferences.Editor editor = sharedPreferences.edit();
             editor.putString(localization, language_locale_sr);
             editor.commit();
+            initListeners();
 
             return true;
         }
