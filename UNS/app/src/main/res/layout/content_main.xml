@@ -48,7 +48,7 @@
                     android:gravity="top"
                     android:textStyle="bold"
                     android:textColor="@color/colorIcon"
-                    android:text="Faculties"/>
+                    android:text="@string/faculties"/>
             </LinearLayout>
 
             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -73,7 +73,7 @@
                     android:gravity="top"
                     android:textColor="@color/colorIcon"
                     android:textStyle="bold"
-                    android:text="Bus routes"/>
+                    android:text="@string/bus_routes"/>
             </LinearLayout>
 
             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -99,7 +99,7 @@
                     android:gravity="top"
                     android:textColor="@color/colorIcon"
                     android:textStyle="bold"
-                    android:text="Notable locations"/>
+                    android:text="@string/notable_locations"/>
             </LinearLayout>
 
             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -124,7 +124,7 @@
                     android:gravity="top"
                     android:textColor="@color/colorIcon"
                     android:textStyle="bold"
-                    android:text="Events"/>
+                    android:text="@string/events"/>
             </LinearLayout>
         </TableRow>
         <TableRow
@@ -155,7 +155,7 @@
                     android:gravity="top"
                     android:textColor="@color/colorIcon"
                     android:textStyle="bold"
-                    android:text="People"/>
+                    android:text="@string/people"/>
             </LinearLayout>
 
             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -180,7 +180,7 @@
                     android:gravity="top"
                     android:textColor="@color/colorIcon"
                     android:textStyle="bold"
-                    android:text="Libraries"/>
+                    android:text="@string/libraries"/>
             </LinearLayout>
 
             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -205,7 +205,7 @@
                     android:gravity="top"
                     android:textColor="@color/colorIcon"
                     android:textStyle="bold"
-                    android:text="Dining"/>
+                    android:text="@string/dining"/>
             </LinearLayout>
 
             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -230,7 +230,7 @@
                     android:gravity="top"
                     android:textColor="@color/colorIcon"
                     android:textStyle="bold"
-                    android:text="Science festival"/>
+                    android:text="@string/science_festival"/>
             </LinearLayout>
         </TableRow>
         <TableRow
@@ -260,7 +260,7 @@
                     android:gravity="top"
                     android:textColor="@android:color/white"
                     android:textStyle="bold"
-                    android:text="Links"/>
+                    android:text="@string/links"/>
             </LinearLayout>
             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="fill_parent"
@@ -285,7 +285,7 @@
                     android:gravity="top"
                     android:textColor="@android:color/white"
                     android:textStyle="bold"
-                    android:text="Full website"/>
+                    android:text="@string/full_website"/>
             </LinearLayout>
             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="fill_parent"
@@ -310,7 +310,7 @@
                     android:gravity="top"
                     android:textColor="@android:color/white"
                     android:textStyle="bold"
-                    android:text="About"/>
+                    android:text="@string/about"/>
             </LinearLayout>
         </TableRow>
         <View
@@ -338,15 +338,21 @@
         </TableRow>
         <TableRow
             android:background="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
             android:paddingTop="10dp"
-            android:paddingBottom="40dp">
+            android:paddingBottom="15dp"
+            android:layout_weight="1">
             <TextView
+                android:layout_span="4"
                 android:layout_width="match_parent"
+                android:layout_gravity="center_horizontal"
                 android:textColor="@android:color/white"
-                android:layout_weight="1"
+                android:textSize="12dp"
                 android:textAlignment="center"
-                android:text="2017 ©\nUNS\nNovi Sad\nSerbia"
-                android:layout_gravity="center_horizontal"/>
+                android:text="@string/_2017_uns_novi_sad_serbia"/>
+
         </TableRow>
 
 

@@ -120,7 +120,7 @@
             android:layout_marginBottom="50dp"
             android:layout_row="3"
             android:background="@color/colorPrimaryDark"
-            android:text="Open bus routes map"
+            android:text="@string/open_bus_routes_map"
             android:textColor="@android:color/white" />
 
         <ImageView
