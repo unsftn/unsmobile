@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="rs.ac.ftn.uns.MainActivity"
     tools:showIn="@layout/activity_main">
@@ -165,31 +165,6 @@
                 android:layout_weight="0.25">
 
                 <ImageButton
-                    android:id="@+id/librariesButton"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:background="@android:color/transparent"
-                    android:layout_gravity="center_horizontal"
-                    android:backgroundTint="@android:color/transparent"
-                    android:scaleType="fitXY"
-                    app:srcCompat="@drawable/ic_libraries" />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="35dp"
-                    android:textAlignment="center"
-                    android:gravity="top"
-                    android:textColor="@color/colorIcon"
-                    android:textStyle="bold"
-                    android:text="@string/libraries"/>
-            </LinearLayout>
-
-            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_weight="0.25">
-
-                <ImageButton
                     android:id="@+id/diningButton"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
@@ -231,6 +206,12 @@
                     android:textColor="@color/colorIcon"
                     android:textStyle="bold"
                     android:text="@string/science_festival"/>
+            </LinearLayout>
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.25">
             </LinearLayout>
         </TableRow>
         <TableRow
@@ -319,8 +300,8 @@
             android:background="@android:color/white"/>
         <TableRow
             android:background="@color/colorPrimaryDark"
-            android:layout_height="60dp"
-            android:paddingTop="10dp"
+            android:layout_height="match_parent"
+            android:paddingTop="50dp"
             android:minHeight="60dp">
             <View
                 android:layout_weight="0.25"
@@ -336,22 +317,25 @@
                 android:layout_weight="0.25">
             </View>
         </TableRow>
+
         <TableRow
-            android:background="@color/colorPrimaryDark"
             android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
             android:gravity="center"
-            android:paddingTop="10dp"
-            android:paddingBottom="15dp"
-            android:layout_weight="1">
+            android:paddingBottom="55dp"
+            android:paddingTop="15dp">
+
             <TextView
-                android:layout_span="4"
                 android:layout_width="match_parent"
                 android:layout_gravity="center_horizontal"
-                android:textColor="@android:color/white"
-                android:textSize="12dp"
+                android:layout_span="4"
+                android:text="@string/_2017_uns_novi_sad_serbia"
                 android:textAlignment="center"
-                android:text="@string/_2017_uns_novi_sad_serbia"/>
+                android:textColor="@android:color/white"
+                android:textSize="12dp" />
 
         </TableRow>
 

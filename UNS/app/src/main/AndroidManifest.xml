@@ -46,13 +46,6 @@
                 android:value="rs.ac.ftn.uns.MainActivity" />
         </activity>
         <activity
-            android:name=".ScienceFestivalActivity"
-            android:label="@string/title_activity_science_festival">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="rs.ac.ftn.uns.ScienceFestivalActivity" />
-        </activity>
-        <activity
             android:name=".PeopleActivity"
             android:label="@string/title_activity_people"
             android:parentActivityName=".MainActivity">
@@ -96,6 +89,14 @@
         <activity
             android:name=".DiningActivity"
             android:label="@string/title_activity_dining">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="rs.ac.ftn.uns.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ScienceFestivalActivity"
+            android:label="@string/title_activity_science_festival"
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="rs.ac.ftn.uns.MainActivity" />

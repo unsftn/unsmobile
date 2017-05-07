@@ -192,16 +192,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        /*
+
         ImageButton buttonScienceFestival = (ImageButton) findViewById(R.id.voteButton);
-        buttonQr.setOnClickListener(new View.OnClickListener() {
+        buttonScienceFestival.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, ScienceFestivalActivity.class);
                 startActivity(intent);
             }
         });
-        */
+
 
     }
 }
