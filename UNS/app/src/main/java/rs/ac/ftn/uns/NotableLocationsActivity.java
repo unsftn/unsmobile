@@ -24,6 +24,7 @@ public class NotableLocationsActivity extends FragmentActivity implements OnMapR
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notable_locations);
+
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
@@ -44,17 +45,13 @@ public class NotableLocationsActivity extends FragmentActivity implements OnMapR
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
+
         DatabaseHelper db = DatabaseHelper.getInstance(this);
         List<NotableLocation> nLlist = null;
-        try {
-            nLlist = db.getNotableLocationDao().queryForAll();
+        nLlist = db.getNotableLocationsByType(NotableLocation.TYPE_INSTITUTION);
 
-            for (NotableLocation nl: nLlist) {
-                mMap.addMarker(new MarkerOptions().position(new LatLng(nl.getLatitude(),nl.getLongitude())).title(nl.getName()).snippet(nl.getInfo()));
-            }
-
-        } catch (SQLException e) {
-            e.printStackTrace();
+        for (NotableLocation nl: nLlist) {
+            mMap.addMarker(new MarkerOptions().position(new LatLng(nl.getLatitude(),nl.getLongitude())).title(nl.getName()).snippet(nl.getInfo()));
         }
 
         // Vojvodina display

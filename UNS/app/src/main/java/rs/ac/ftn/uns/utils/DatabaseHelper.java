@@ -25,7 +25,7 @@ import rs.ac.ftn.uns.model.NotableLocation;
 
 public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
 
-    private static final String DATABASE_NAME    = "appl_data.db";
+    private static final String DATABASE_NAME    = "application_data.db";
     private static final int    DATABASE_VERSION = 1;
 
     private Dao<NotableLocation, Integer> nLDao = null;
@@ -47,11 +47,7 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
             getNotableLocationDao();
             getABItemDao();
 
-            NotableLocation nl = new NotableLocation();
-            nl.setName("Home2");
-            nl.setInfo("Home2, sweet home2");
-            nl.setLatitude(45.253232);
-            nl.setLongitude(19.369306);
+            NotableLocation nl = new NotableLocation("Name: home", "Info: sweet home", NotableLocation.TYPE_INSTITUTION, 19.369306, 45.253232);
             nLDao.create(nl);
 
 
@@ -159,6 +155,19 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
             List<ABItem> lABI = where.query();
             return lABI;
 
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+
+    public List<NotableLocation> getNotableLocationsByType(String type){
+        try {
+            List<NotableLocation> retList = getNotableLocationDao().queryBuilder()
+                    .where().eq(NotableLocation.FIELD_NAME_NOTABLE_LOCATION_TYPE, type).query();
+
+            return retList;
         } catch (SQLException e) {
             e.printStackTrace();
         }
