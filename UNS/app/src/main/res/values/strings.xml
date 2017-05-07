@@ -201,4 +201,6 @@ The University of Novi Sad builds its future together with other institutions th
     <string name="search_people">Search</string>
 
     <string name="people_form_empty_message">Nothing to search by!</string>
+    <string name="title_activity_dormitories">Dormitories</string>
+    <string name="title_activity_dining">Dining</string>
 </resources>

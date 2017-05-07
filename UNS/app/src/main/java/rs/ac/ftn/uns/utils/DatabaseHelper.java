@@ -237,12 +237,13 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
         ArrayList<NotableLocation> notableLocations = new ArrayList<>();
 
         NotableLocation nl = new NotableLocation("Studentski dom Slobodan Bajić", "", NotableLocation.TYPE_DORMITORY,  19.849363, 45.245123);
-        NotableLocation n2 = new NotableLocation("Uplata stanarine za studentske domove", "", NotableLocation.TYPE_DORMITORY,  19.849269, 45.245492);
-        NotableLocation n3 = new NotableLocation("Studentski dom A", "", NotableLocation.TYPE_DORMITORY,  19.840576, 45.236570);
-        NotableLocation n4 = new NotableLocation("Studentski dom B", "", NotableLocation.TYPE_DORMITORY,   19.838369, 45.236333);
-        NotableLocation n5 = new NotableLocation("Studentski dom C", "", NotableLocation.TYPE_DORMITORY,   19.838671, 45.235765);
-        NotableLocation n6 = new NotableLocation("Studentski dom Klara Feješ", "", NotableLocation.TYPE_DORMITORY,  19.836128, 45.245049);
-        NotableLocation n7 = new NotableLocation("Studentski dom Sajmište", "", NotableLocation.TYPE_DORMITORY,  19.8267572, 45.2570944);
+        NotableLocation n2 = new NotableLocation("Studentski dom Veljko Vlahović", "", NotableLocation.TYPE_DORMITORY,  19.848454, 45.245604);
+        NotableLocation n3 = new NotableLocation("Uplata stanarine za studentske domove", "", NotableLocation.TYPE_DORMITORY,  19.849269, 45.245492);
+        NotableLocation n4 = new NotableLocation("Studentski dom A", "", NotableLocation.TYPE_DORMITORY,  19.840576, 45.236570);
+        NotableLocation n5 = new NotableLocation("Studentski dom B", "", NotableLocation.TYPE_DORMITORY,   19.838369, 45.236333);
+        NotableLocation n6 = new NotableLocation("Studentski dom C", "", NotableLocation.TYPE_DORMITORY,   19.838671, 45.235765);
+        NotableLocation n7 = new NotableLocation("Studentski dom Klara Feješ", "", NotableLocation.TYPE_DORMITORY,  19.836128, 45.245049);
+        NotableLocation n8 = new NotableLocation("Studentski dom Sajmište", "", NotableLocation.TYPE_DORMITORY,  19.8267572, 45.2570944);
 
         notableLocations.add(nl);
         notableLocations.add(n2);
@@ -251,6 +252,7 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
         notableLocations.add(n5);
         notableLocations.add(n6);
         notableLocations.add(n7);
+        notableLocations.add(n8);
 
         return notableLocations;
     }
@@ -259,8 +261,12 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
         ArrayList<NotableLocation> notableLocations = new ArrayList<>();
 
         NotableLocation n1 = new NotableLocation("Uplata obroka za menzu", "", NotableLocation.TYPE_CANTEEN,  19.848970, 45.245387);
-        NotableLocation n2 = new NotableLocation("Velika menza", "", NotableLocation.TYPE_CANTEEN,  19.848301, 45.245555);
-        NotableLocation n3 = new NotableLocation("Mala menza", "", NotableLocation.TYPE_CANTEEN,  19.852067, 45.244620);
+        NotableLocation n2 = new NotableLocation("Velika menza", "", NotableLocation.TYPE_CANTEEN, 19.849393, 45.246070);
+        NotableLocation n3 = new NotableLocation("Mala menza", "", NotableLocation.TYPE_CANTEEN, 19.852067, 45.244620);
+
+        notableLocations.add(n1);
+        notableLocations.add(n2);
+        notableLocations.add(n3);
 
         return notableLocations;
     }

@@ -128,6 +128,23 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        ImageButton buttonDormitories = (ImageButton) findViewById(R.id.dormitoriesButton);
+        buttonDormitories.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, DormitoriesActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton buttonDining = (ImageButton) findViewById(R.id.diningButton);
+        buttonDining.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, DiningActivity.class);
+                startActivity(intent);
+            }
+        });
         ImageButton buttonNL = (ImageButton) findViewById(R.id.notableLocationsButton);
         buttonNL.setOnClickListener(new View.OnClickListener() {
             @Override
