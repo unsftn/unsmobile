@@ -28,6 +28,7 @@ public class NotableLocationsActivity extends FragmentActivity implements OnMapR
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
+
         mapFragment.getMapAsync(this);
     }
 
@@ -44,7 +45,7 @@ public class NotableLocationsActivity extends FragmentActivity implements OnMapR
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-
+        mMap.clear();
 
         DatabaseHelper db = DatabaseHelper.getInstance(this);
         List<NotableLocation> nLlist = null;

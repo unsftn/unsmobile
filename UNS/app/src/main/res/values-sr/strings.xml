@@ -157,6 +157,9 @@ The University of Novi Sad builds its future together with other institutions th
     <string name="about">About</string>
     <string name="_2017_uns_novi_sad_serbia">"2017 © UNS\nNovi Sad, Serbia"</string>
 
+    <string name="rectory_title">UNS Rektorat</string>
+    <string name="rectory_desc">Rektorat Univerziteta u Novom Sadu</string>
+
     <string name="address_book_header">Pretražite kontakte osoblja univerziteta.</string>
     <string name="address_book_text">
         <![CDATA[
