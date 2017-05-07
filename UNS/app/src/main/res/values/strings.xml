@@ -156,4 +156,46 @@ The University of Novi Sad builds its future together with other institutions th
     <string name="full_website">Full website</string>
     <string name="about">About</string>
     <string name="_2017_uns_novi_sad_serbia">"2017 © UNS\nNovi Sad, Serbia"</string>
+
+
+    <string name="address_book_header">Pretražite kontakte osoblja univerziteta.</string>
+    <string name="address_book_text">
+        <![CDATA[
+            <html>
+             <head></head>
+             <body style="text-align:justify;color:black;font-size:18;">
+              Broj centrale: (+381 21) 485-2000<br/>
+              Svim brojevima lokala sa telefonske
+              centrale Univerziteta, osim lokala
+              koji počinju cifrom 5, može se
+              direktno pristupiti dodavanjem
+              prefiksa 485 ispred broja lokala.
+             </body>
+            </html>
+        ]]>
+    </string>
+
+    <string name="i_blank"> -- Svi fakulteti -- </string>
+    <string name="i_university">Univerzitet u Novom Sadu</string>
+    <string name="i_pmf">Prirodno-matematički fakultet</string>
+    <string name="i_ftn">Fakultet tehničkih nauka</string>
+    <string name="i_ff">Filozofski fakultet</string>
+    <string name="i_pf">Pravni fakultet</string>
+    <string name="i_efns">Ekonomski fakultet - odelenje Novi Sad</string>
+    <string name="i_pof">Poljoprivredni fakultet</string>
+    <string name="i_tf">Tehnološki fakultet</string>
+    <string name="i_efsu">Ekonomski fakultet - Subotica</string>
+    <string name="i_ipt">Institut za prehrambene tehnologije</string>
+    <string name="i_spinner_prompt">Institucija</string>
+
+
+    <string name="wp_blank"> -- Sva zanimanja -- </string>
+    <string name="wp_administrative"> Administrativni radnik </string>
+    <string name="wp_administrator"> Administrator </string>
+    <string name="wp_spinner_prompt">Zanimanje</string>
+    <string name="insert_a_name">Insert a name</string>
+    <string name="insert_a_surname">Insert a surname</string>
+    <string name="search_people">Search</string>
+
+    <string name="people_form_empty_message">Nothing to search by!</string>
 </resources>

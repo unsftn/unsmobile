@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string-array name="institutions_list">
+            <item>@string/i_blank</item>
+            <item>@string/i_university</item>
+            <item>@string/i_pmf</item>
+            <item>@string/i_ftn</item>
+            <item>@string/i_ff</item><!--Filozofski -->
+            <item>@string/i_pf</item><!--Pravni -->
+            <item>@string/i_efns</item><!--Ekonomski - odeljenje ns -->
+            <item>@string/i_pof</item><!--Poljoprivredni-->
+            <item>@string/i_tf</item><!-- Tehnoloski-->
+            <item>@string/i_efsu</item><!-- Ekonomski Subotica-->
+            <item>@string/i_ipt</item><!-- Institut za Prehrambene-->
+        </string-array>
+
+    <string-array name="work_places_list">
+        <item>@string/wp_blank</item>
+        <item>@string/wp_administrative</item>
+        <item>@string/wp_administrator</item>
+    </string-array>
+
+</resources>

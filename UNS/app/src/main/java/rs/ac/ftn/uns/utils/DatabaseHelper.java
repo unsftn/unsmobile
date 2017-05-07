@@ -7,14 +7,16 @@ import android.util.Log;
 
 import com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper;
 import com.j256.ormlite.dao.Dao;
+import com.j256.ormlite.stmt.QueryBuilder;
+import com.j256.ormlite.stmt.Where;
 import com.j256.ormlite.support.ConnectionSource;
 import com.j256.ormlite.table.TableUtils;
 
 import java.sql.SQLException;
+import java.util.List;
 
-import rs.ac.ftn.uns.model.BusRoute;
+import rs.ac.ftn.uns.model.ABItem;
 import rs.ac.ftn.uns.model.NotableLocation;
-import rs.ac.ftn.uns.model.RoutePoint;
 
 
 /**
@@ -23,12 +25,11 @@ import rs.ac.ftn.uns.model.RoutePoint;
 
 public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
 
-    private static final String DATABASE_NAME    = "app_data.db";
+    private static final String DATABASE_NAME    = "appl_data.db";
     private static final int    DATABASE_VERSION = 1;
 
-    private Dao<BusRoute, Integer> mBRDao = null;
-    private Dao<RoutePoint, Integer> mRPDao = null;
-    private Dao<NotableLocation, Integer> mNLDao = null;
+    private Dao<NotableLocation, Integer> nLDao = null;
+    private Dao<ABItem, Integer> aBIDao = null;
 
     public DatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -38,38 +39,26 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
     public void onCreate(SQLiteDatabase db, ConnectionSource connectionSource) {
         try {
 
-            TableUtils.createTable(connectionSource, BusRoute.class);
-            TableUtils.createTable(connectionSource, RoutePoint.class);
             TableUtils.createTable(connectionSource, NotableLocation.class);
+            TableUtils.createTable(connectionSource, ABItem.class);
 
             Log.i("Mahab", "Am here, creating tables.");
 
-            getBusRouteDao();
-            getRoutePointDao();
             getNotableLocationDao();
-
-            BusRoute br = new BusRoute();
-            br.setName("7");
-            mBRDao.create(br);
-
-            RoutePoint gp = new RoutePoint(br, 45.245372, 19.834229);
-            mRPDao.create(gp);
-            gp = new RoutePoint(br, 45.246106, 19.834887);
-            mRPDao.create(gp);
-            gp = new RoutePoint(br, 45.245290, 19.836845);
-            mRPDao.create(gp);
-            gp = new RoutePoint(br, 45.243900, 19.835450);
-            mRPDao.create(gp);
-            gp = new RoutePoint(br, 45.244808, 19.833696);
-            mRPDao.create(gp);
+            getABItemDao();
 
             NotableLocation nl = new NotableLocation();
             nl.setName("Home2");
             nl.setInfo("Home2, sweet home2");
             nl.setLatitude(45.245372);
             nl.setLongitude(19.834229);
-            mNLDao.create(nl);
+            nLDao.create(nl);
 
+
+            ABItem abi = new ABItem("dr", "Biljana", "Abramović", "2008", "Prorektor za nastavu", "Univerzitet u Novom Sadu");
+            aBIDao.create(abi);
+            abi = new ABItem("", "Ljiljana", "Mićović", "2020", "Šef kabineta", "Univerzitet u Novom Sadu");
+            aBIDao.create(abi);
 
         } catch (SQLException e) {
             throw new RuntimeException(e);
@@ -80,8 +69,8 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, ConnectionSource connectionSource,
                           int oldVersion, int newVersion) {
         try {
-            TableUtils.dropTable(connectionSource, BusRoute.class, true);
-            TableUtils.dropTable(connectionSource, RoutePoint.class, true);
+            TableUtils.dropTable(connectionSource, NotableLocation.class, true);
+            TableUtils.dropTable(connectionSource, ABItem.class, true);
 
             onCreate(db, connectionSource);
         } catch (SQLException e) {
@@ -90,37 +79,27 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
     }
 
     /* DAOS */
-
-    public Dao<BusRoute, Integer> getBusRouteDao() throws SQLException {
-        if (mBRDao == null) {
-            mBRDao = getDao(BusRoute.class);
-        }
-
-        return mBRDao;
-    }
-
-    public Dao<RoutePoint, Integer> getRoutePointDao() throws SQLException {
-        if (mRPDao == null) {
-            mRPDao = getDao(RoutePoint.class);
-        }
-
-        return mRPDao;
-    }
-
     public Dao<NotableLocation, Integer> getNotableLocationDao() throws SQLException {
-        if (mNLDao == null) {
-            mNLDao = getDao(NotableLocation.class);
+        if (nLDao == null) {
+            nLDao = getDao(NotableLocation.class);
         }
 
-        return mNLDao;
+        return nLDao;
+    }
+
+    public Dao<ABItem, Integer> getABItemDao() throws SQLException {
+        if (aBIDao == null) {
+            aBIDao = getDao(ABItem.class);
+        }
+
+        return aBIDao;
     }
 
     @Override
     public void close() {
-        mBRDao = null;
-        mRPDao = null;
-        mNLDao = null;
 
+        nLDao = null;
+        aBIDao = null;
         super.close();
     }
 
@@ -132,4 +111,59 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
 
         return sDatabaseHelper;
     }
+
+    public List<ABItem> getABItemsByParams(String name, String surname, String institution, String work_place){
+
+        try {
+            QueryBuilder<ABItem, Integer> qb = getABItemDao().queryBuilder();
+            Where<ABItem, Integer> where = qb.where();
+            boolean first = true;
+            if(name != null){
+                where.eq(ABItem.FIELD_NAME_AB_ITEM_NAME, name);
+                first = false;
+            }
+
+            if(surname != null){
+
+                if(!first) {
+                    where.and();
+
+                }else{
+                    first = false;
+                }
+                where.eq(ABItem.FIELD_NAME_AB_ITEM_SURNAME, surname);
+            }
+
+            if(work_place != null){
+
+                if(!first) {
+                    where.and();
+
+                }else{
+                    first = false;
+                }
+                where.eq(ABItem.FIELD_NAME_AB_ITEM_WORK_PLACE, work_place);
+            }
+
+            if(institution != null){
+
+                if(!first) {
+                    where.and();
+
+                }else{
+                    first = false;
+                }
+                where.eq(ABItem.FIELD_NAME_AB_ITEM_INSTITUTION, institution);
+            }
+
+            List<ABItem> lABI = where.query();
+            return lABI;
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+
 }
