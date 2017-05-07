@@ -109,14 +109,14 @@
                 android:layout_weight="0.25">
 
                 <ImageButton
-                    android:id="@+id/eventsButton"
+                    android:id="@+id/dormitoriesButton"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:background="@android:color/transparent"
                     android:layout_gravity="center_horizontal"
                     android:backgroundTint="@android:color/transparent"
                     android:scaleType="fitXY"
-                    app:srcCompat="@drawable/ic_events" />
+                    app:srcCompat="@drawable/ic_dormitories" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="35dp"
@@ -124,7 +124,7 @@
                     android:gravity="top"
                     android:textColor="@color/colorIcon"
                     android:textStyle="bold"
-                    android:text="@string/events"/>
+                    android:text="@string/dormitories"/>
             </LinearLayout>
         </TableRow>
         <TableRow

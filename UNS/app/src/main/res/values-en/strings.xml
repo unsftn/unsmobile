@@ -147,7 +147,7 @@ The University of Novi Sad builds its future together with other institutions th
     <string name="faculties">Faculties</string>
     <string name="bus_routes">Bus routes</string>
     <string name="notable_locations">Notable locations</string>
-    <string name="events">Events</string>
+    <string name="dormitories">Dormitories</string>
     <string name="people">People</string>
     <string name="libraries">Libraries</string>
     <string name="dining">Dining</string>
@@ -185,6 +185,7 @@ The University of Novi Sad builds its future together with other institutions th
     <string name="i_tf">Tehnološki fakultet</string>
     <string name="i_efsu">Ekonomski fakultet - Subotica</string>
     <string name="i_ipt">Institut za prehrambene tehnologije</string>
+    <string name="i_edu_hun">Teacher training faculty in the Hungarian language</string>
     <string name="i_spinner_prompt">Institution</string>
 
     <string name="wp_blank"> -- Sva zanimanja -- </string>

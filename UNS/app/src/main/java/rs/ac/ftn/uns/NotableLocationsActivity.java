@@ -44,22 +44,21 @@ public class NotableLocationsActivity extends FragmentActivity implements OnMapR
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
-
         DatabaseHelper db = DatabaseHelper.getInstance(this);
         List<NotableLocation> nLlist = null;
         try {
             nLlist = db.getNotableLocationDao().queryForAll();
-            NotableLocation home = nLlist.get(0);
 
-            mMap.addMarker(new MarkerOptions().position(new LatLng(home.getLatitude(),home.getLongitude())).title(home.getName()).snippet(home.getInfo()));
-            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(home.getLatitude(),home.getLongitude()), 18));
+            for (NotableLocation nl: nLlist) {
+                mMap.addMarker(new MarkerOptions().position(new LatLng(nl.getLatitude(),nl.getLongitude())).title(nl.getName()).snippet(nl.getInfo()));
+            }
+
         } catch (SQLException e) {
             e.printStackTrace();
         }
+
+        // Vojvodina display
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(45.4934299, 19.9424136), 8));
 
     }
 }

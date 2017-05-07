@@ -50,8 +50,8 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
             NotableLocation nl = new NotableLocation();
             nl.setName("Home2");
             nl.setInfo("Home2, sweet home2");
-            nl.setLatitude(45.245372);
-            nl.setLongitude(19.834229);
+            nl.setLatitude(45.253232);
+            nl.setLongitude(19.369306);
             nLDao.create(nl);
 
 
