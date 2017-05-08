@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/competitors"
+        android:icon="@drawable/ic_brainstorm"
+        android:title="@string/voting_title" />
+
+    <item
+        android:id="@+id/results"
+        android:icon="@drawable/ic_trophy"
+        android:title="@string/results_title" />
+
+</menu>

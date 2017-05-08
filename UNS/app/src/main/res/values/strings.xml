@@ -1,75 +1,78 @@
 <resources>
     <string name="app_name">UNS</string>
     <string name="about_university_title">
-        MODERN UNIVERSITY THAT CONSISTS OF FOURTEEN FACULTIES IN FOUR HISTORIC CITIES OF CENTRAL EUROPE
+        SAVREMENI UNIVERZITET SA ČETRNAEST FAKULTETA U ČETIRI ISTORIJSKA CENTRALNOEVROPSKA GRADA
     </string>
     <string name="about_university">
-        The University of Novi Sad has more than 50.000 students and 5.000 employees and as such it is one of the largest educational and research centres in Central Europe. It belongs to the group of universities that provide a broad range of comprehensive and up-to date knowledge of almost all scientific areas.\n\n
-The University of Novi Sad offers 300 accredited study programmes on all study levels, undergraduate, master, specialist and doctoral studies, which are carried out on the Faculties and University Centres for Interdisciplinary and Multidisciplinary Studies. All study programmes are modern and in accordance with the development of science. Apart from the Faculties and Centres, two Scientific Institutes have an important role in creating a firm scientific base for the continuous modernization of these study programmes.\n\n
-The University of Novi Sad has a well developed scientific infrastructure and an enormous innovative potential. The Central Library and the Faculty and Institute Libraries have rich literary collections that cover all relevant scientific areas and enable access to big electronic databases. As a result of a special agreement on cooperation, researchers, professors and students have access to the Matica Srpska Library, the oldest Serbian scientific and cultural institution, founded in 1826, and which has more than 3 million publications. There are several up-to-date laboratories. The Technology Park of the University of Novi Sad has special significance for the development of innovative ideas.\n\n
-As a result of such infrastructure and the quality of scientific and educational work, high results were achieved in some areas.\n\n
-With the support of the Faculty of Technical Sciences and other members of the University, 125 start-up and spin-off companies were founded, mostly in the IT sector, which employ young engineers who graduated from the University of Novi Sad. Some of these companies carry out projects for big international companies and they have contributed to the recognition of Novi Sad as the “Software Valley” in the international circles. Project teams and distinguished researchers from the University have received numerous international and national awards for the best technological innovations.\n\n
-The University of Novi Sad is well-known for the accredited centres of excellence in the fields of mathematics, vibro-acoustics and biotechnology. BioSense Institute, which was founded within the Faculty of Technical Sciences was proclaimed to be one of the thirty research institutions in Europe with the greatest potential in the field of biotechnologies.\n\n
-The students of the Faculty of Sport and Physical Education have been achieving impressive results for decades in international competitions, and the students of the Faculty of Law are among the best in the European moot court competitions. Among the best in Europe are also the students’ teams of the Faculty of Technical sciences in competitions in robotics.\n\n
-The University of Novi Sad connects people, space and time. Its Faculties and Institutes are situated in four historic cities in the Autonomous Province of Vojvodina, in the north of the Republic of Serbia.\n\n
-The headquarters of the University of Novi Sad are in Novi Sad, in the central campus on the bank of the Danube, near the famous Petrovaradin fortress, built in the 18th century, as well as in the vicinity of the old city centre. The following Faculties are also situated there: Faculty of Philosophy, Faculty of Agriculture, Faculty of Sciences, Faculty of Law, Faculty of Technical Sciences, Faculty of Technology, Faculty of Sport and Physical Education and the Institute of Food Technology, as well as the Department of the Faculty of Economics, headquartered in Subotica. Faculty of Medicine, Academy of Arts and the Institute of Lowland Forestry and the Environment are situated in other parts of the city for practical purposes.\n\n
-In Subotica, there are Faculty of Economics, Faculty of Civil Engineering, and the Teachers’ Training Faculty in the Hungarian Language. The headquarters of the Faculty of Education are in Sombor and that of the Technical Faculty “Mihajlo Pupin” are in Zrenjanin. All these institutions are accredited and they have valid licences to work.\n\n
-The students of the University of Novi Sad have at their disposal special services that provide healthcare, accommodation and food. Medical services are provided by the Health Protection Centre, which comprises units for specialist health care, medical counseling and laboratories. Accommodation and food are provided by the Student Centre. The level of services that are provided is in accordance with the standards accepted in the developed European countries.\n\n
-The University of Novi Sad builds its future together with other institutions that belong to the unique European scientific and educational community, but it also actively cooperates with other institutions from all over the world. This cooperation is based on many bilateral and multilateral agreements that ensure collaboration on joint research and development projects, mobility of students, teaching and administrative staff, etc.
+Univerzitet u Novom Sadu je sa više od 50.000 studenata i 5.000 zaposlenih jedno od najvećih obrazovnih i naučnih središta u Centralnoj Evropi. Spada u red takozvanih kompletnih ili sveobuhvatnih univerziteta, koji su karakteristični po tome što pružaju znanja iz gotovo svih naučnih oblasti. U okviru Univerziteta izvodi se nastava iz 300 akreditovanih studijskih programa na nivou osnovnih, master, specijalističkih i doktorskih studija, čiji su nosioci fakulteti i univerzitetski centri za interdisciplinarne i multidisciplinarne studije. Studijski programi su savremeni i prate razvoj nauke. Značajnu ulogu u stvaranju naučne podloge za njihovo permanentno osavremenjavanje, sem fakulteta i centara, imaju i dva naučna instituta.\n\n
+Univerzitet u Novom Sadu ima razvijenu naučnu infrastrukturu i snažan inovativni potencijal. Centralna biblioteka i biblioteke fakulteta i instituta raspolažu bogatim knjižnim fondovima koji pokrivaju sve relevantne naučne oblasti i omogućuju pristup velikim elektronskim bazama podataka. Na osnovu posebnog sporazuma o saradnji, istraživačima, profesorima i studentima dostupna je i Biblioteka Matice srpske, najstarije nacionalne naučne i kulturne institucije, osnovane 1826. godine, u kojoj se nalazi više od 3.000.000 publikacija. Na Univerzitetu postoji više savremenih laboratorija. Poseban značaj za jačanje inovativnosti ima Tehnološki park Univerziteta u Novom Sadu.\n\n
+Zahvaljujući takvoj infrastrukturi i kvalitetu naučnog i obrazovnog rada, postignuti su vrhunski rezultati u pojedinim oblastima.\n\n
+Uz podršku Fakulteta tehničkih nauka i drugih članica Univerziteta, formirano je 125 start-up i spin-off kompanija, uglavnom u IT sektoru, koje zapošljavaju mlade inženjere s Univerziteta u Novom Sadu. Neke od njih rade projekte za velike svetske kompanije i doprinele su tome da Novi Sad u međunarodnim okvirima postane poznat kao „softverska dolina“. Projektni timovi i istaknuti pojedinci sa Univerziteta dobitnici su brojnih međunarodnih i nacionalnih priznanja za najbolje tehnološke inovacije.\n\n
+Univerzitet u Novom Sadu je poznat po akreditovanim centrima izvrsnosti u oblasti matematike, vibro-akustike i biotehnologije. BioSens Institut, koji je zasnovan u okviru Fakulteta tehničkih nauka, Evropska unija je proglasila za jednu od 30 naučnoistraživačkih institucija s najvećim potencijalom u Evropi u oblasti biotehnologija.\n\n
+Studenti Fakulteta sporta i fizičkog vaspitanja decenijama postižu vrhunske rezultate na svetskim nadmetanjima, a studenti Pravnog fakulteta su godinama među najboljima na evropskim takmičenjima u simulaciji suđenja. Među najboljima u Evropi su i timovi Fakulteta tehničkih nauka koji se takmiče u robotici.\n\n
+Univerzitet u Novom Sadu povezuje ljude, prostor i vreme. Njegovi fakulteti i instituti se nalaze u četiri istorijska grada u Autonomnoj Pokrajini Vojvodini, na severu Republike Srbije.\n\n
+Sedište Univerziteta je u Novom Sadu, u centralnom kampusu na obali Dunava, u neposrednoj blizini čuvene Petrovaradinske tvrđave, izgrađene u XVIII veku, i starog gradskog jezgra. Na toj lokaciji nalaze se i Filozofski fakultet, Poljoprivredni fakultet, Prirodno-matematički fakultet, Pravni fakultet, Fakultet tehničkih nauka, Tehnološki fakultet, Fakultet sporta i fizičkog vaspitanja i Institut za prehrambene tehnologije, kao i odeljenje Ekonomskog fakulteta u Subotici. Medicinski fakultet, Akademija umetnosti i Institut za nizijsko šumarstvo i životnu sredinu nalaze se u drugim delovima grada iz praktičnih razloga.\n\n
+U Subotici se nalaze Ekonomski fakultet, Građevinski fakultet i Učiteljski fakultet na mađarskom nastavnom jeziku. U Somboru je sedište Pedagoškog fakulteta, a u Zrenjaninu sedište Tehničkog fakulteta „Mihajlo Pupin“. Sve institucije su akreditovane i imaju dozvole za rad.\n\n
+Studentima Univerziteta u Novom Sadu su na raspolaganju specijalizovane službe koje obezbeđuju zdravstvenu zaštitu, smeštaj i ishranu. Zdravstvene usluge pruža Zavod za zdravstvenu zaštitu studenata u okviru kojeg postoje specijalizovane ambulante, savetovališta i odeljenja laboratorijske dijagnostike. Smeštaj i ishranu obezbeđuje Studentski centar. Nivo usluga odgovara standardima koji su prihvaćeni u razvijenim evropskim državama.\n\n
+Univerzitet u Novom Sadu gradi svoju budućnost zajedno sa ostalim institucijama koje pripadaju jedinstvenom naučnom i obrazovnom prostoru Evrope, ali aktivno sarađuje i sa institucijama iz drugih delova sveta. Saradnja je zasnovana na brojnim bilateralnim i multilateralnim sporazumima koji predviđaju rad na zajedničkim naučnim i razvojnim projektima, mobilnost studenata, nastavnika, saradnika, administrativnog osoblja i slično.\n\n
     </string>
     <string name="about_application_title">
-        ABOUT APPLICATION
+        O APLIKACIJI
     </string>
     <string name="about_application">
-        Mobile application which is able to provide necessary information to students and employees. Using this application you are able to find all relevant places and information related to campus.Feel free to contribute, project is open source, and it is available on: https://github.com/unsftn/unsmobile.\n\nIt is developed by Aleksandar Bosnjak and Nenad Todorovic.\nChairs of Informatics.\nElectrical and computing department.\nFaculty Of Technical Sciences, University Of Novi Sad.\n
+        Android aplikacija koja nudi korisne informacije vezane za univerzitet i studentski život. Korišćenjem ove aplikacije u mogućnosti ste da nađete sva bitna mesta i informacije neophodne za vaše studije. Projekat je open-source i sav kod je dostupan na adresi: https://github.com/unsftn/unsmobile. Ukoliko imate ideju za nadogradnju, ili izmenu slobodno se uključite u razvoj projekta, kako bi učinili da aplikacija bude što korisnija svim studentima UNS-a.\n\nAplikaciju razvili: Aleksandar Bošnjak i Nenad Todorović.\nKatedra za informatiku.\nElektrotehnika i Računarstvo.\nFakultet Tehničkih Nauka, Univerzitet u Novom Sadu.\n
 
         \n\n
-        2017©. All rights reserved. University of Novi Sad.
+        2017©. Sva prava rezervisana. Univerzitet u Novom Sadu.
     </string>
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">Podešavanja</string>
     <string name="title_activity_bus_routes">University bus routes</string>
-    <string name="title_activity_notable_locations">Notable Locations</string>
-    <string name="route">Route</string>
-    <string name="title_activity_science_festival">ScienceFestivalActivity</string>
-    <string name="title_university">University</string>
+    <string name="title_activity_notable_locations">Važne lokacije</string>
+    <string name="route">Ruta</string>
+    <string name="title_activity_science_festival">Festival nauke 2017</string>
+    <string name="title_university">Univerzitet</string>
     <string name="title_dashboard">Dashboard</string>
-    <string name="title_application">Application</string>
+    <string name="title_application">Aplikacija</string>
     <string name="title_home">Home</string>
-    <string name="title_activity_people">People</string>
-    <string name="title_activity_about">About</string>
+    <string name="title_activity_people">Adresar</string>
+    <string name="title_activity_about">O nama</string>
     <string name="english_localization">English</string>
-    <string name="serbian_localization">Serbian</string>
+    <string name="serbian_localization">Srpski</string>
     <string name="bus_routes_headline_title">Related bus route numbers:</string>
-    <string name="title_activity_faculties">UNS Faculties</string>
-    <string name="ftn_title">Faculty of Technical Sciences</string>
-    <string name="pmf_title">Faculty of Sciences</string>
-    <string name="law_title">Faculty of Law</string>
-    <string name="agriculture_title">Faculty of Agriculture</string>
-    <string name="philosophy_title">Faculty of Philosophy</string>
-    <string name="economics_title">Faculty of Economics</string>
-    <string name="technology_title">Faculty of Technology</string>
-    <string name="medicine_title">Faculty of Medicine</string>
-    <string name="art_academy_title">Academy of Arts</string>
-    <string name="civil_engineering_title">Faculty of Civil Engineering</string>
-    <string name="pupin_title">"Mihajlo Pupin" Technical Faculty in Zrenjanin</string>
-    <string name="dif_title">Faculty of Sport and Physical Education</string>
-    <string name="education_title">Faculty of Education</string>
-    <string name="open_bus_routes_map">Open bus routes map</string>
-    <string name="faculties">Faculties</string>
-    <string name="bus_routes">Bus routes</string>
+    <string name="title_activity_faculties">UNS fakulteti</string>
+    <string name="ftn_title">Fakultet tehničkih nauka</string>
+    <string name="pmf_title">Prirodno-matematički fakultet</string>
+    <string name="law_title">Pravni fakultet</string>
+    <string name="agriculture_title">Poljoprivredni fakultet</string>
+    <string name="philosophy_title">Filozofski fakultet</string>
+    <string name="economics_title">Ekonomski fakultet</string>
+    <string name="technology_title">Tehnološki fakultet</string>
+    <string name="medicine_title">Medicinski fakultet</string>
+    <string name="art_academy_title">Akademija umetnosti</string>
+    <string name="civil_engineering_title">Građevinski fakultet</string>
+    <string name="pupin_title">Tehnički fakultet „Mihajlo Pupin”</string>
+    <string name="dif_title">Fakultet sporta i fizičkog vaspitanja</string>
+    <string name="education_title">Pedagoški fakultet</string>
+    <string name="open_bus_routes_map">Mapa autobuskih ruta</string>
+    <string name="faculties">Fakulteti</string>
+    <string name="bus_routes">Autobuske rute</string>
     <string name="notable_locations">Notable locations</string>
     <string name="dormitories">Studentski domovi</string>
-    <string name="people">People</string>
+    <string name="people">Imenik</string>
     <string name="libraries">Libraries</string>
-    <string name="dining">Dining</string>
-    <string name="science_festival">Science festival</string>
-    <string name="links">Links</string>
-    <string name="full_website">Full website</string>
-    <string name="about">About</string>
-    <string name="_2017_uns_novi_sad_serbia">"2017 © UNS\nNovi Sad, Serbia\nUNSinfo@uns.ac.rs"</string>
+    <string name="dining">Ishrana</string>
+    <string name="science_festival">Festival nauke 2017</string>
+    <string name="links">Linkovi</string>
+    <string name="full_website">Veb-sajt</string>
+    <string name="about">O nama</string>
+    <string name="_2017_uns_novi_sad_serbia">"2017 © UNS\nNovi Sad, Srbija\nUNSinfo@uns.ac.rs"</string>
 
     <string name="rectory_title">UNS Rektorat</string>
     <string name="rectory_desc">Rektorat Univerziteta u Novom Sadu</string>
+
+    <string name="voting_title">Glasaj</string>
+    <string name="vote_title"><u>Glasaj za najbolju <b>inovaciju</b>:</u></string>
+    <string name="results_title">Rezultati</string>
 
     <string name="address_book_header">Pretražite kontakte osoblja univerziteta.</string>
     <string name="address_book_text">
@@ -115,4 +118,7 @@ The University of Novi Sad builds its future together with other institutions th
     <string name="title_activity_dormitories">Dormitories</string>
     <string name="title_activity_dining">Dining</string>
     <string name="title_notifications">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

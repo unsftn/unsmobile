@@ -99,7 +99,7 @@
                     android:gravity="top"
                     android:textColor="@color/colorIcon"
                     android:textStyle="bold"
-                    android:text="@string/notable_locations"/>
+                    android:text="@string/title_activity_notable_locations"/>
             </LinearLayout>
 
             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"

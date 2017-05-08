@@ -29,7 +29,7 @@ The University of Novi Sad builds its future together with other institutions th
     <string name="title_activity_bus_routes">University bus routes</string>
     <string name="title_activity_notable_locations">Notable Locations</string>
     <string name="route">Route</string>
-    <string name="title_activity_science_festival">ScienceFestivalActivity</string>
+    <string name="title_activity_science_festival">Science festival 2017</string>
     <string name="title_university">University</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_application">Application</string>
@@ -69,6 +69,10 @@ The University of Novi Sad builds its future together with other institutions th
 
     <string name="rectory_title">UNS Rectory</string>
     <string name="rectory_desc">University of Novi Sad Rectory</string>
+
+    <string name="voting_title">Vote</string>
+    <string name="vote_title"><u>Vote for best <b>innovation</b>:</u></string>
+    <string name="results_title">Results</string>
 
     <string name="address_book_header">Pretražite kontakte osoblja univerziteta.</string>
     <string name="address_book_text">

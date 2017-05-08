@@ -7,7 +7,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-public class ScienceFestivalActivity extends AppCompatActivity {
+import rs.ac.ftn.uns.TeamFragment.OnListFragmentInteractionListener;
+import rs.ac.ftn.uns.dummy.DummyContent;
+
+public class ScienceFestivalActivity extends AppCompatActivity implements OnListFragmentInteractionListener{
 
     private TextView mTextMessage;
 
@@ -17,14 +20,11 @@ public class ScienceFestivalActivity extends AppCompatActivity {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
-                case R.id.navigation_home:
-                    mTextMessage.setText(R.string.title_home);
+                case R.id.competitors:
+                    mTextMessage.setText(R.string.vote_title);
                     return true;
-                case R.id.navigation_dashboard:
-                    mTextMessage.setText(R.string.title_dashboard);
-                    return true;
-                case R.id.navigation_notifications:
-                    mTextMessage.setText(R.string.title_notifications);
+                case R.id.results:
+                    mTextMessage.setText(R.string.results_title);
                     return true;
             }
             return false;
@@ -42,4 +42,8 @@ public class ScienceFestivalActivity extends AppCompatActivity {
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
     }
 
+    @Override
+    public void onListFragmentInteraction(DummyContent.DummyItem item) {
+
+    }
 }
