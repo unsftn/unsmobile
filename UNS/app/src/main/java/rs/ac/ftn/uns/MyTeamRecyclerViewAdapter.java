@@ -14,8 +14,12 @@ import java.util.List;
 
 public class MyTeamRecyclerViewAdapter extends RecyclerView.Adapter<MyTeamRecyclerViewAdapter.ViewHolder> {
 
-    private final List<Competitor> mValues;
-    private final OnListFragmentInteractionListener mListener;
+    private  List<Competitor> mValues;
+    private  OnListFragmentInteractionListener mListener = null;
+
+    public MyTeamRecyclerViewAdapter(List<Competitor> items) {
+        this.mValues = items;
+    }
 
     public MyTeamRecyclerViewAdapter(List<Competitor> items, OnListFragmentInteractionListener listener) {
         mValues = items;
@@ -32,8 +36,10 @@ public class MyTeamRecyclerViewAdapter extends RecyclerView.Adapter<MyTeamRecycl
     @Override
     public void onBindViewHolder(final ViewHolder holder, int position) {
         holder.mItem = mValues.get(position);
-        holder.mIdView.setText(String.valueOf(mValues.get(position).id));
+        holder.mIdView.setText(String.valueOf(position + 1));
         holder.mContentView.setText(mValues.get(position).projectName);
+        holder.mScientificAreaView.setText(mValues.get(position).researchField);
+        holder.mProjectDescription.setText(mValues.get(position).projectDesc);
 
         holder.mView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,6 +62,8 @@ public class MyTeamRecyclerViewAdapter extends RecyclerView.Adapter<MyTeamRecycl
         public final View mView;
         public final TextView mIdView;
         public final TextView mContentView;
+        public final TextView mScientificAreaView;
+        public final TextView mProjectDescription;
         public Competitor mItem;
 
         public ViewHolder(View view) {
@@ -63,6 +71,8 @@ public class MyTeamRecyclerViewAdapter extends RecyclerView.Adapter<MyTeamRecycl
             mView = view;
             mIdView = (TextView) view.findViewById(R.id.id);
             mContentView = (TextView) view.findViewById(R.id.content);
+            mScientificAreaView = (TextView) view.findViewById(R.id.scientific_area);
+            mProjectDescription = (TextView) view.findViewById(R.id.project_description);
         }
 
         @Override

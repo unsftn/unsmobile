@@ -45,6 +45,7 @@
             android:text="Physics" />
 
         <TextView
+            android:id="@+id/project_description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="This is some description about team project with some text\nNew row starts right here and it has some extra content!"
