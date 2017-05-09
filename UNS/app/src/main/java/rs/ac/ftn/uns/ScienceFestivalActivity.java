@@ -8,7 +8,7 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 import rs.ac.ftn.uns.TeamFragment.OnListFragmentInteractionListener;
-import rs.ac.ftn.uns.dummy.DummyContent;
+import rs.ac.ftn.uns.model.Competitor;
 
 public class ScienceFestivalActivity extends AppCompatActivity implements OnListFragmentInteractionListener{
 
@@ -43,7 +43,7 @@ public class ScienceFestivalActivity extends AppCompatActivity implements OnList
     }
 
     @Override
-    public void onListFragmentInteraction(DummyContent.DummyItem item) {
+    public void onListFragmentInteraction(Competitor item) {
 
     }
 }

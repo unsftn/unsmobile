@@ -10,10 +10,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import rs.ac.ftn.uns.dummy.DummyContent;
-import rs.ac.ftn.uns.dummy.DummyContent.DummyItem;
-
-import java.util.List;
+import rs.ac.ftn.uns.model.Competitor;
+import rs.ac.ftn.uns.model.CompetitorsContent;
 
 /**
  * A fragment representing a list of Items.
@@ -69,7 +67,7 @@ public class TeamFragment extends Fragment {
             } else {
                 recyclerView.setLayoutManager(new GridLayoutManager(context, mColumnCount));
             }
-            recyclerView.setAdapter(new MyTeamRecyclerViewAdapter(DummyContent.ITEMS, mListener));
+            recyclerView.setAdapter(new MyTeamRecyclerViewAdapter(CompetitorsContent.ITEMS, mListener));
         }
         return view;
     }
@@ -104,6 +102,6 @@ public class TeamFragment extends Fragment {
      */
     public interface OnListFragmentInteractionListener {
         // TODO: Update argument type and name
-        void onListFragmentInteraction(DummyItem item);
+        void onListFragmentInteraction(Competitor item);
     }
 }

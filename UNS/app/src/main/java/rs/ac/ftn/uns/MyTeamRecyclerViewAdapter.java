@@ -7,21 +7,17 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import rs.ac.ftn.uns.TeamFragment.OnListFragmentInteractionListener;
-import rs.ac.ftn.uns.dummy.DummyContent.DummyItem;
+import rs.ac.ftn.uns.model.Competitor;
 
 import java.util.List;
 
-/**
- * {@link RecyclerView.Adapter} that can display a {@link DummyItem} and makes a call to the
- * specified {@link OnListFragmentInteractionListener}.
- * TODO: Replace the implementation with code for your data type.
- */
+
 public class MyTeamRecyclerViewAdapter extends RecyclerView.Adapter<MyTeamRecyclerViewAdapter.ViewHolder> {
 
-    private final List<DummyItem> mValues;
+    private final List<Competitor> mValues;
     private final OnListFragmentInteractionListener mListener;
 
-    public MyTeamRecyclerViewAdapter(List<DummyItem> items, OnListFragmentInteractionListener listener) {
+    public MyTeamRecyclerViewAdapter(List<Competitor> items, OnListFragmentInteractionListener listener) {
         mValues = items;
         mListener = listener;
     }
@@ -36,8 +32,8 @@ public class MyTeamRecyclerViewAdapter extends RecyclerView.Adapter<MyTeamRecycl
     @Override
     public void onBindViewHolder(final ViewHolder holder, int position) {
         holder.mItem = mValues.get(position);
-        holder.mIdView.setText(mValues.get(position).id);
-        holder.mContentView.setText(mValues.get(position).content);
+        holder.mIdView.setText(String.valueOf(mValues.get(position).id));
+        holder.mContentView.setText(mValues.get(position).projectName);
 
         holder.mView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,7 +56,7 @@ public class MyTeamRecyclerViewAdapter extends RecyclerView.Adapter<MyTeamRecycl
         public final View mView;
         public final TextView mIdView;
         public final TextView mContentView;
-        public DummyItem mItem;
+        public Competitor mItem;
 
         public ViewHolder(View view) {
             super(view);

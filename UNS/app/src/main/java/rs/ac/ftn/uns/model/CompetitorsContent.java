@@ -1,4 +1,4 @@
-package rs.ac.ftn.uns.dummy;
+package rs.ac.ftn.uns.model;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -11,34 +11,34 @@ import java.util.Map;
  * <p>
  * TODO: Replace all uses of this class before publishing your app.
  */
-public class DummyContent {
+public class CompetitorsContent {
 
     /**
      * An array of sample (dummy) items.
      */
-    public static final List<DummyItem> ITEMS = new ArrayList<DummyItem>();
+    public static final List<Competitor> ITEMS = new ArrayList<Competitor>();
 
     /**
      * A map of sample (dummy) items, by ID.
      */
-    public static final Map<String, DummyItem> ITEM_MAP = new HashMap<String, DummyItem>();
+    public static final Map<String, Competitor> ITEM_MAP = new HashMap<String, Competitor>();
 
     private static final int COUNT = 25;
 
     static {
         // Add some sample items.
         for (int i = 1; i <= COUNT; i++) {
-            addItem(createDummyItem(i));
+            addItem(createTeam(i));
         }
     }
 
-    private static void addItem(DummyItem item) {
+    private static void addItem(Competitor item) {
         ITEMS.add(item);
         ITEM_MAP.put(item.id, item);
     }
 
-    private static DummyItem createDummyItem(int position) {
-        return new DummyItem(String.valueOf(position), "Item " + position, makeDetails(position));
+    private static Competitor createTeam(int position) {
+        return new Competitor(String.valueOf(position), "Item " + position, "research field :)", makeDetails(position), "Project desciption text related to some stuf/nNew line and some number is here also: " + position);
     }
 
     private static String makeDetails(int position) {
@@ -50,23 +50,4 @@ public class DummyContent {
         return builder.toString();
     }
 
-    /**
-     * A dummy item representing a piece of content.
-     */
-    public static class DummyItem {
-        public final String id;
-        public final String content;
-        public final String details;
-
-        public DummyItem(String id, String content, String details) {
-            this.id = id;
-            this.content = content;
-            this.details = details;
-        }
-
-        @Override
-        public String toString() {
-            return content;
-        }
-    }
 }

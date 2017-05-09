@@ -15,15 +15,10 @@
         android:textColor="@android:color/white"/>
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_idea"
-        android:tint="@android:color/white"/>
-
-    <ImageView
-        android:layout_width="80dp"
-        android:layout_height="match_parent"
-        android:src="@drawable/uns_logo"/>
+        android:layout_width="45dp"
+        android:layout_height="50dp"
+        android:tint="@android:color/white"
+        app:srcCompat="@drawable/ic_idea" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -36,6 +31,7 @@
             android:layout_height="wrap_content"
             android:textSize="20dp"
             android:textStyle="bold"
+            android:text="Team Caramba"
             android:textColor="@android:color/white"
             android:textAppearance="?attr/textAppearanceListItem" />
 
