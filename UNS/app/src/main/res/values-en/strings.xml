@@ -113,5 +113,6 @@ The University of Novi Sad builds its future together with other institutions th
     <string name="insert_a_surname">Insert a surname</string>
     <string name="search_people">Search</string>
 
-    <string name="people_form_empty_message">Nothing to search by!</string>
+    <string name="people_form_empty_message">No results have been found for given data!</string>
+    <string name="people_empty_form">Nothing to search by!</string>
 </resources>

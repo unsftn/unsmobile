@@ -1,18 +1,16 @@
 package rs.ac.ftn.uns;
 
-import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
-import java.sql.SQLException;
 import java.util.List;
 
+import rs.ac.ftn.uns.model.ABItemContent;
 import rs.ac.ftn.uns.model.ABItem;
 import rs.ac.ftn.uns.utils.DatabaseHelper;
 
-public class SearchedPeopleActivity extends AppCompatActivity {
+public class SearchedPeopleActivity extends AppCompatActivity implements ABItemFragment.OnListFragmentInteractionListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,9 +23,24 @@ public class SearchedPeopleActivity extends AppCompatActivity {
         String institution = (String) getIntent().getStringExtra("institution");
         String work_place = (String) getIntent().getStringExtra("work_place");
 
-        Toast.makeText(SearchedPeopleActivity.this, "Do ovde stigoh :P", Toast.LENGTH_SHORT).show();
 
-        List<ABItem> abi = DatabaseHelper.getInstance(SearchedPeopleActivity.this).getABItemsByParams(name, surname, institution, work_place);
+
+        List<ABItem> abi = DatabaseHelper.getInstance(SearchedPeopleActivity.this).getABItemsByParams(name, surname, institution);
+
+
+
+        ABItemContent.cleanItems();
+        for(ABItem item : abi) {
+            ABItemContent.addItem(item);
+        }
+
+        if(abi.isEmpty()) {
+            Toast.makeText(SearchedPeopleActivity.this, getResources().getString(R.string.people_search_no_results), Toast.LENGTH_LONG).show();
+        }
+    }
+
+    @Override
+    public void onListFragmentInteraction(ABItem item) {
 
     }
 }

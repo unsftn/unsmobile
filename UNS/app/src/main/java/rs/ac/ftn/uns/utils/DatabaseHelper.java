@@ -112,7 +112,7 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
         return sDatabaseHelper;
     }
 
-    public List<ABItem> getABItemsByParams(String name, String surname, String institution, String work_place){
+    public List<ABItem> getABItemsByParams(String name, String surname, String institution){
 
         try {
             QueryBuilder<ABItem, Integer> qb = getABItemDao().queryBuilder();
@@ -134,18 +134,8 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
                 where.eq(ABItem.FIELD_NAME_AB_ITEM_SURNAME, surname);
             }
 
-            if(work_place != null){
 
-                if(!first) {
-                    where.and();
-
-                }else{
-                    first = false;
-                }
-                where.eq(ABItem.FIELD_NAME_AB_ITEM_WORK_PLACE, work_place);
-            }
-
-            if(institution != null){
+            if(institution != null && !institution.equals("-- Svi fakulteti --") && !institution.equals("-- All fakulties --")){
 
                 if(!first) {
                     where.and();
