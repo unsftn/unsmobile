@@ -1,14 +1,31 @@
 package rs.ac.ftn.uns;
 
+import android.os.AsyncTask;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.MenuItem;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
+import java.lang.reflect.Type;
+import java.util.ArrayList;
+import java.util.List;
 
 import rs.ac.ftn.uns.TeamFragment.OnListFragmentInteractionListener;
 import rs.ac.ftn.uns.model.Competitor;
+import rs.ac.ftn.uns.model.CompetitorsContent;
+import rs.ac.ftn.uns.utils.NetworkHelper;
 
 public class ScienceFestivalActivity extends AppCompatActivity implements OnListFragmentInteractionListener{
 
@@ -46,4 +63,5 @@ public class ScienceFestivalActivity extends AppCompatActivity implements OnList
     public void onListFragmentInteraction(Competitor item) {
 
     }
+
 }

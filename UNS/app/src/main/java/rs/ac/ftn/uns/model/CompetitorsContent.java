@@ -16,7 +16,7 @@ public class CompetitorsContent {
     /**
      * An array of sample (dummy) items.
      */
-    public static final List<Competitor> ITEMS = new ArrayList<Competitor>();
+    public static List<Competitor> ITEMS = new ArrayList<Competitor>();
 
     /**
      * A map of sample (dummy) items, by ID.
