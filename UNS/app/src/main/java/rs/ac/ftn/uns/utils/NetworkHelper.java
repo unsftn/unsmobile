@@ -14,33 +14,50 @@ public class NetworkHelper {
 
     protected static OkHttpClient client = new OkHttpClient();
     protected static MediaType JSON = MediaType.parse("application/json; charset=utf-8");
-    ;
 
-    protected static String GITHUB_BASE_URL="https://api.github.com/search/repositories";
-    protected static String PARAM_QUERY="q";
 
-    public static String httpGetRequest(String uri) throws IOException{
+    protected static final String FETCH_DATA_BASE_URL="https://fn-mobile-api.uns.ac.rs/api/fetchbulk";
+    protected static final String FETCH_DATA_EXTENSION="voter_id";
 
-        Request request = new Request.Builder().url(uri).build();
+    protected static final String POST_VOTE_DATA_URL ="https://fn-mobile-api.uns.ac.rs/api/vote";
+
+    protected static final String GET_VOTES_RESULTS_URL="https://fn-mobile-api.uns.ac.rs/api/vote/results";
+
+    public static String fetchData(String android_id) throws IOException{
+
+        Uri builtUri = Uri.parse(FETCH_DATA_BASE_URL).buildUpon()
+                .appendQueryParameter(FETCH_DATA_EXTENSION, android_id).build();
+
+        Request request = new Request.Builder().url(builtUri.toString()).build();
 
         Response response = client.newCall(request).execute();
         return response.body().string();
 
     }
 
-    //TODO change the GITHUB_BASE_URL url, provide a JSON :)
-    public static String postHttpRequest(String json) throws IOException{
+    public static String getVotesResult() throws IOException{
+
+        Request request = new Request.Builder().url(GET_VOTES_RESULTS_URL).build();
+
+        Response response = client.newCall(request).execute();
+        return response.body().string();
+
+    }
+
+    public static String postVote(String json) throws IOException{
         RequestBody body = RequestBody.create(JSON, json);
 
-        Request request = new Request.Builder().url(GITHUB_BASE_URL).post(body).build();
+        Request request = new Request.Builder().url(POST_VOTE_DATA_URL).post(body).build();
         Response response = client.newCall(request).execute();
         return response.body().string();
     }
 
-    public static String buildUri(String str){
-        Uri builtUri = Uri.parse(GITHUB_BASE_URL).buildUpon()
-                .appendQueryParameter(PARAM_QUERY, str).build();
+    public static String buildVoteJSON(String candidateId, String voterId){
+        String JSON =   "{" +
+                            "\"candidateId\": \"" + candidateId + "\"," +
+                            "\"voterId\":\"" + voterId + "\"" +
+                        "}";
 
-        return builtUri.toString();
+        return JSON;
     }
 }
