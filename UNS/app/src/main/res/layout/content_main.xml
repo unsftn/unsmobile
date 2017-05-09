@@ -339,6 +339,19 @@
 
         </TableRow>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="vertical"
+            android:layout_gravity="bottom|center_horizontal">
+            <ImageView
+                android:layout_height="100dp"
+                android:layout_width="300dp"
+                android:layout_gravity="center_horizontal"
+                android:tint="@android:color/white"
+                android:src="@drawable/grad"/>
+        </LinearLayout>
 
     </TableLayout>
 

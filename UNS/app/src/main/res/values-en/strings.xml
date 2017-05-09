@@ -71,8 +71,8 @@ The University of Novi Sad builds its future together with other institutions th
     <string name="rectory_desc">University of Novi Sad Rectory</string>
 
     <string name="voting_title">Vote</string>
-    <string name="vote_title"><u>Vote for best <b>innovation</b>:</u></string>
-    <string name="results_title">Results</string>
+    <string name="vote_title"><u>Vote for best <b>project</b>:</u></string>
+    <string name="results_title">Results:</string>
 
     <string name="address_book_header">Pretražite kontakte osoblja univerziteta.</string>
     <string name="address_book_text">

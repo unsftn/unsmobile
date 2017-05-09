@@ -26,7 +26,7 @@ Univerzitet u Novom Sadu gradi svoju budućnost zajedno sa ostalim institucijama
         2017©. Sva prava rezervisana. Univerzitet u Novom Sadu.
     </string>
     <string name="action_settings">Podešavanja</string>
-    <string name="title_activity_bus_routes">University bus routes</string>
+    <string name="title_activity_bus_routes">Autobuske rute do kampusa</string>
     <string name="title_activity_notable_locations">Važne lokacije</string>
     <string name="route">Ruta</string>
     <string name="title_activity_science_festival">Festival nauke 2017</string>
@@ -38,7 +38,7 @@ Univerzitet u Novom Sadu gradi svoju budućnost zajedno sa ostalim institucijama
     <string name="title_activity_about">O nama</string>
     <string name="english_localization">English</string>
     <string name="serbian_localization">Srpski</string>
-    <string name="bus_routes_headline_title">Related bus route numbers:</string>
+    <string name="bus_routes_headline_title">Autobuske linije koje vode do kampusa:</string>
     <string name="title_activity_faculties">UNS fakulteti</string>
     <string name="ftn_title">Fakultet tehničkih nauka</string>
     <string name="pmf_title">Prirodno-matematički fakultet</string>
@@ -71,8 +71,8 @@ Univerzitet u Novom Sadu gradi svoju budućnost zajedno sa ostalim institucijama
     <string name="rectory_desc">Rektorat Univerziteta u Novom Sadu</string>
 
     <string name="voting_title">Glasaj</string>
-    <string name="vote_title"><u>Glasaj za najbolju <b>inovaciju</b>:</u></string>
-    <string name="results_title">Rezultati</string>
+    <string name="vote_title"><u>Glasaj za najbolji <b>projekat</b>:</u></string>
+    <string name="results_title">Rezultati:</string>
 
     <string name="address_book_header">Pretražite kontakte osoblja univerziteta.</string>
     <string name="address_book_text">
