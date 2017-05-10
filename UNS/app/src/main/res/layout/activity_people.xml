@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:scrollbars="vertical"
-    tools:context="rs.ac.ftn.uns.PeopleActivity">
+    tools:context="rs.ac.uns.PeopleActivity">
 
     <LinearLayout
         android:layout_width="fill_parent"

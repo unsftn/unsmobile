@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="rs.ac.ftn.uns.FacultiesActivity"
+    tools:context="rs.ac.uns.FacultiesActivity"
     tools:showIn="@layout/activity_faculties">
 
     <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"

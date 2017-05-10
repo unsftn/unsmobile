@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="rs.ac.ftn.uns">
+    package="rs.ac.uns">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -38,12 +38,12 @@
             android:label="@string/title_activity_notable_locations">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="rs.ac.ftn.uns.MainActivity" />
+                android:value="rs.ac.uns.MainActivity" />
         </activity>
         <activity android:name=".VotingActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="rs.ac.ftn.uns.MainActivity" />
+                android:value="rs.ac.uns.MainActivity" />
         </activity>
         <activity
             android:name=".PeopleActivity"
@@ -51,7 +51,7 @@
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="rs.ac.ftn.uns.MainActivity" />
+                android:value="rs.ac.uns.MainActivity" />
         </activity>
         <activity
             android:name=".AboutActivity"
@@ -59,7 +59,7 @@
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="rs.ac.ftn.uns.MainActivity" />
+                android:value="rs.ac.uns.MainActivity" />
         </activity>
         <activity
             android:name=".BusRoutesActivity"
@@ -67,7 +67,7 @@
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="rs.ac.ftn.uns.MainActivity" />
+                android:value="rs.ac.uns.MainActivity" />
         </activity>
         <activity
             android:name=".FacultiesActivity"
@@ -76,7 +76,7 @@
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="rs.ac.ftn.uns.MainActivity" />
+                android:value="rs.ac.uns.MainActivity" />
         </activity>
         <activity android:name=".SearchedPeopleActivity" />
         <activity
@@ -84,14 +84,14 @@
             android:label="@string/title_activity_dormitories">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="rs.ac.ftn.uns.MainActivity" />
+                android:value="rs.ac.uns.MainActivity" />
         </activity>
         <activity
             android:name=".DiningActivity"
             android:label="@string/title_activity_dining">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="rs.ac.ftn.uns.MainActivity" />
+                android:value="rs.ac.uns.MainActivity" />
         </activity>
         <activity
             android:name=".ScienceFestivalActivity"
@@ -99,7 +99,7 @@
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="rs.ac.ftn.uns.MainActivity" />
+                android:value="rs.ac.uns.MainActivity" />
         </activity>
     </application>
 
