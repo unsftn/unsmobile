@@ -154,10 +154,10 @@ public class TeamFragment extends Fragment {
             updateCompetitorsList(result);
 
             if(result != null && !result.equals("")){
-                Toast.makeText(getActivity(), "Uspešno učitani timovi.",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), getString(R.string.team_fetch_success),Toast.LENGTH_SHORT).show();
                 Log.i("Mahab", result);
             } else {
-                Toast.makeText(getActivity(), "Došlo je do problema prilikom učitavanja takmičara.",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), getString(R.string.team_fetch_failure),Toast.LENGTH_SHORT).show();
             }
         }
 
@@ -174,7 +174,7 @@ public class TeamFragment extends Fragment {
                 activePoll = jsonResult.getJSONObject("pollActive");
 
                 if(activePoll.getString("itHas").equals("false")) {
-                    Toast.makeText(getActivity(), "Glasanje je završeno.",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), getString(R.string.poll_has_ended),Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -197,7 +197,7 @@ public class TeamFragment extends Fragment {
                 CompetitorsContent.ITEMS = (ArrayList<Competitor>) gson.fromJson(teams, listType);
             }
             if(votes != null && votes != "" && !votes.equals("null")) {
-                Toast.makeText(getActivity(), "Glasanje onemogućeno, vaš glas je već zabeležen.",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), getString(R.string.already_voted),Toast.LENGTH_SHORT).show();
             }
 
             new HttpGetVoteResultsTask().execute();

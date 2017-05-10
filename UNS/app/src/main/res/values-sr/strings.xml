@@ -117,4 +117,8 @@ Univerzitet u Novom Sadu gradi svoju budućnost zajedno sa ostalim institucijama
 
     <string name="people_search_no_results">Nema rezultata za date podatke!</string>
     <string name="people_empty_form">Niste popunili polja za pretragu!</string>
+    <string name="team_fetch_success">Uspešno učitani timovi.</string>
+    <string name="team_fetch_failure">Došlo je do problema prilikom učitavanja timova.</string>
+    <string name="poll_has_ended">Glasanje je završeno.</string>
+    <string name="already_voted">Vaš glas je već zabeležen.</string>
 </resources>

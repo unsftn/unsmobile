@@ -118,4 +118,9 @@ The University of Novi Sad builds its future together with other institutions th
     <string name="people_form_empty_message">No results have been found for given data!</string>
     <string name="people_empty_form">Nothing to search by!</string>
     <string name="locale">Locale</string>
+
+    <string name="team_fetch_success">Teams have been loaded successfully.</string>
+    <string name="team_fetch_failure">Teams could not be loaded.</string>
+    <string name="poll_has_ended">The poll has ended.</string>
+    <string name="already_voted">You have already voted.</string>
 </resources>
