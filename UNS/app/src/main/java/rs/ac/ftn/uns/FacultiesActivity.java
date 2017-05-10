@@ -16,19 +16,20 @@ import android.widget.ImageButton;
 import java.util.Locale;
 
 public class FacultiesActivity extends AppCompatActivity {
-
+    /*
     private static String localization = "localization";
     private static String language_locale_sr = "sr";
     private static String language_locale_en = "en";
 
     private SharedPreferences sharedPreferences;
     private static String UNSAPP_PREFS = "unsapp_prefs";
-
+    */
     @SuppressWarnings("deprecation")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        /*
         sharedPreferences = getSharedPreferences(UNSAPP_PREFS, MODE_PRIVATE);
         String savedLocale = sharedPreferences.getString(localization, language_locale_sr);
         Log.i("Mahab", savedLocale + " is the saved value");
@@ -39,6 +40,8 @@ public class FacultiesActivity extends AppCompatActivity {
         config.locale = locale;
         getBaseContext().getResources().updateConfiguration(config,
                 getBaseContext().getResources().getDisplayMetrics());
+
+                */
         setContentView(R.layout.activity_faculties);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);

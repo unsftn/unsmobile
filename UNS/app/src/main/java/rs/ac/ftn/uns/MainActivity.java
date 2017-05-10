@@ -23,18 +23,19 @@ public class MainActivity extends AppCompatActivity {
 
     private Menu menu;
 
+    /*
     private static String localization = "localization";
     private static String language_locale_sr = "sr";
     private static String language_locale_en = "en";
 
     private SharedPreferences sharedPreferences;
     private static String UNSAPP_PREFS = "unsapp_prefs";
-
+    */
     @SuppressWarnings("deprecation")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+    /*
         sharedPreferences = getSharedPreferences(UNSAPP_PREFS, MODE_PRIVATE);
         String savedLocale = sharedPreferences.getString(localization, language_locale_sr);
         Log.i("Mahab", savedLocale + " is the saved value");
@@ -45,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         config.locale = locale;
         getBaseContext().getResources().updateConfiguration(config,
                 getBaseContext().getResources().getDisplayMetrics());
-
+    */
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -58,16 +59,17 @@ public class MainActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         this.menu = menu;
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        //getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
 
+    /*
     public void updateOptionsMenu(){
         if (menu != null) {
             onPrepareOptionsMenu(menu);
         }
     }
-
+    */
     @SuppressWarnings("deprecation")
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -75,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-
+        /*
         //noinspection SimplifiableIfStatement
         if (id == R.id.english_localization) {
 
@@ -120,7 +122,7 @@ public class MainActivity extends AppCompatActivity {
             updateOptionsMenu();
 
             return true;
-        }
+        }*/
         return super.onOptionsItemSelected(item);
     }
 
