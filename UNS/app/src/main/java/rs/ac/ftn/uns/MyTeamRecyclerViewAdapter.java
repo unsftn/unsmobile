@@ -41,6 +41,7 @@ public class MyTeamRecyclerViewAdapter extends RecyclerView.Adapter<MyTeamRecycl
     public void onBindViewHolder(final ViewHolder holder, int position) {
         holder.mItem = mValues.get(position);
         holder.mIdView.setText(String.valueOf(position + 1));
+        holder.mTeamName.setText(mValues.get(position).teamName);
         holder.mContentView.setText(mValues.get(position).projectName);
         holder.mScientificAreaView.setText(mValues.get(position).researchField);
         holder.mProjectDescription.setText(mValues.get(position).projectDesc);
@@ -70,6 +71,7 @@ public class MyTeamRecyclerViewAdapter extends RecyclerView.Adapter<MyTeamRecycl
     public class ViewHolder extends RecyclerView.ViewHolder {
         public final View mView;
         public final TextView mIdView;
+        public final TextView mTeamName;
         public final TextView mContentView;
         public final TextView mScientificAreaView;
         public final TextView mProjectDescription;
@@ -82,6 +84,7 @@ public class MyTeamRecyclerViewAdapter extends RecyclerView.Adapter<MyTeamRecycl
             super(view);
             mView = view;
             mIdView = (TextView) view.findViewById(R.id.id);
+            mTeamName = (TextView) view.findViewById(R.id.team_name);
             mContentView = (TextView) view.findViewById(R.id.content);
             mScientificAreaView = (TextView) view.findViewById(R.id.scientific_area);
             mProjectDescription = (TextView) view.findViewById(R.id.project_description);

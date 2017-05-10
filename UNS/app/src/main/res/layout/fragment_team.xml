@@ -53,6 +53,15 @@
             android:textAppearance="?attr/textAppearanceListItem" />
 
         <TextView
+            android:id="@+id/team_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:text="Caramba team" />
+
+        <TextView
             android:id="@+id/scientific_area"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
