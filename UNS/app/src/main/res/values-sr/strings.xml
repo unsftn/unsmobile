@@ -20,7 +20,7 @@ Univerzitet u Novom Sadu gradi svoju budućnost zajedno sa ostalim institucijama
         O APLIKACIJI
     </string>
     <string name="about_application">
-        Android aplikacija koja nudi korisne informacije vezane za univerzitet i studentski život. Korišćenjem ove aplikacije u mogućnosti ste da nađete sva bitna mesta i informacije neophodne za vaše studije. Projekat je open-source i sav kod je dostupan na adresi: https://github.com/unsftn/unsmobile. Ukoliko imate ideju za nadogradnju, ili izmenu slobodno se uključite u razvoj projekta, kako bi učinili da aplikacija bude što korisnija svim studentima UNS-a.\n\nAplikaciju razvili: Aleksandar Bošnjak i Nenad Todorović.\nKatedra za informatiku.\nElektrotehnika i Računarstvo.\nFakultet Tehničkih Nauka, Univerzitet u Novom Sadu.\n
+        Android aplikacija koja nudi korisne informacije vezane za univerzitet i studentski život. Korišćenjem ove aplikacije u mogućnosti ste da nađete sva bitna mesta i informacije neophodne za vaše studije. Projekat je open-source i sav kod je javno dostupan. Ukoliko imate ideju za nadogradnju, ili izmenu slobodno se uključite u razvoj projekta, kako bi učinili da aplikacija bude što korisnija svim studentima UNS-a.\n\nKatedra za informatiku.\nElektrotehnika i Računarstvo.\nFakultet Tehničkih Nauka, Univerzitet u Novom Sadu.\n
 
         \n\n
         2017©. Sva prava rezervisana. Univerzitet u Novom Sadu.
@@ -112,6 +112,8 @@ Univerzitet u Novom Sadu gradi svoju budućnost zajedno sa ostalim institucijama
     <string name="insert_a_name">Unesite ime</string>
     <string name="insert_a_surname">Unesite prezime</string>
     <string name="search_people">Pretraga</string>
+
+    <string name="locale">Lokal</string>
 
     <string name="people_search_no_results">Nema rezultata za date podatke!</string>
     <string name="people_empty_form">Niste popunili polja za pretragu!</string>

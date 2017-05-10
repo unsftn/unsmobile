@@ -36,7 +36,10 @@ public class MyABItemRecyclerViewAdapter extends RecyclerView.Adapter<MyABItemRe
     @Override
     public void onBindViewHolder(final ViewHolder holder, int position) {
         holder.mItem = mValues.get(position);
-        String fullName = mValues.get(position).getTitle() + " " + mValues.get(position).getName() + " " + mValues.get(position).getSurname();
+        String fullName = mValues.get(position).getTitle() + " " + mValues.get(position).getName()
+                + " " + mValues.get(position).getSurname() + "\n" +
+                ((SearchedPeopleActivity)mListener).getResources().getString(R.string.locale)+
+                ": " + mValues.get(position).getLocale();
         holder.mIdView.setText(fullName);
         String workPlace = mValues.get(position).getInstitution() +" - " + mValues.get(position).getWork_place();
         holder.mContentView.setText(workPlace);
