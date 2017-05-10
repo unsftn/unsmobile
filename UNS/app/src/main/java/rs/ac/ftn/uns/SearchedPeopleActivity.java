@@ -17,7 +17,6 @@ public class SearchedPeopleActivity extends AppCompatActivity implements ABItemF
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_searched_people);
 
-
         String name = (String) getIntent().getStringExtra("name");
         String surname = (String) getIntent().getStringExtra("surname");
         String institution = (String) getIntent().getStringExtra("institution");

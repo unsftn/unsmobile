@@ -15,8 +15,13 @@ import android.widget.ImageButton;
 
 import java.util.Locale;
 
+import rs.ac.ftn.uns.utils.DatabaseHelper;
+import rs.ac.ftn.uns.utils.NetworkHelper;
+
 
 public class MainActivity extends AppCompatActivity {
+
+    private Menu menu;
 
     private static String localization = "localization";
     private static String language_locale_sr = "sr";
@@ -52,8 +57,15 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
+        this.menu = menu;
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
+    }
+
+    public void updateOptionsMenu(){
+        if (menu != null) {
+            onPrepareOptionsMenu(menu);
+        }
     }
 
     @SuppressWarnings("deprecation")
@@ -83,6 +95,8 @@ public class MainActivity extends AppCompatActivity {
             editor.commit();
             initListeners();
 
+            updateOptionsMenu();
+
             return true;
         }
         if (id == R.id.serbian_localization) {
@@ -102,6 +116,8 @@ public class MainActivity extends AppCompatActivity {
             editor.putString(localization, language_locale_sr);
             editor.commit();
             initListeners();
+
+            updateOptionsMenu();
 
             return true;
         }
@@ -203,5 +219,12 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+    }
+
+    @Override
+    protected void onDestroy(){
+        DatabaseHelper.getInstance(MainActivity.this).close();
+
+        super.onDestroy();
     }
 }

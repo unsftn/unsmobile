@@ -110,14 +110,14 @@ Univerzitet u Novom Sadu gradi svoju budućnost zajedno sa ostalim institucijama
     <string name="wp_administrative"> Administrativni radnik </string>
     <string name="wp_administrator"> Administrator </string>
     <string name="wp_spinner_prompt">Zanimanje</string>
-    <string name="insert_a_name">Insert a name</string>
-    <string name="insert_a_surname">Insert a surname</string>
-    <string name="search_people">Search</string>
+    <string name="insert_a_name">Unesite ime</string>
+    <string name="insert_a_surname">Unesite prezime</string>
+    <string name="search_people">Pretraga</string>
 
-    <string name="people_form_empty_message">Nothing to search by!</string>
-    <string name="title_activity_dormitories">Dormitories</string>
-    <string name="title_activity_dining">Dining</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="people_form_empty_message">Niste popunili polja za pretragu!</string>
+    <string name="title_activity_dormitories">Domovi</string>
+    <string name="title_activity_dining">Menze</string>
+    <string name="title_notifications">Obaveštenja</string>
 
     <string name="people_search_no_results">Nema rezultata za date podatke!</string>
     <string name="people_empty_form">Niste popunili polja za pretragu!</string>
