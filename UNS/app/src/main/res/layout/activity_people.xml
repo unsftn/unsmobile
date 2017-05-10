@@ -55,15 +55,6 @@
             android:entries="@array/institutions_list">
         </Spinner>
 
-        <Spinner
-            android:id="@+id/people_work_place"
-            android:layout_height="wrap_content"
-            android:paddingTop="5dp"
-            android:prompt="@string/i_spinner_prompt"
-            android:layout_width="fill_parent"
-            android:entries="@array/work_places_list">
-        </Spinner>
-
         <Button
             android:id="@+id/people_search_button"
             android:layout_width="100dp"

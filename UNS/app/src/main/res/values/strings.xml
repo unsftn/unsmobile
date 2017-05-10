@@ -20,7 +20,7 @@ Univerzitet u Novom Sadu gradi svoju budućnost zajedno sa ostalim institucijama
         O APLIKACIJI
     </string>
     <string name="about_application">
-        Android aplikacija koja nudi korisne informacije vezane za univerzitet i studentski život. Korišćenjem ove aplikacije u mogućnosti ste da nađete sva bitna mesta i informacije neophodne za vaše studije. Projekat je open-source i sav kod je dostupan na adresi: https://github.com/unsftn/unsmobile. Ukoliko imate ideju za nadogradnju, ili izmenu slobodno se uključite u razvoj projekta, kako bi učinili da aplikacija bude što korisnija svim studentima UNS-a.\n\nAplikaciju razvili: Aleksandar Bošnjak i Nenad Todorović.\nKatedra za informatiku.\nElektrotehnika i Računarstvo.\nFakultet Tehničkih Nauka, Univerzitet u Novom Sadu.\n
+        Android aplikacija koja nudi korisne informacije vezane za univerzitet i studentski život. Korišćenjem ove aplikacije u mogućnosti ste da nađete sva bitna mesta i informacije neophodne za vaše studije. Projekat je open-source i sav kod je javno dostupan. Ukoliko imate ideju za nadogradnju, ili izmenu slobodno se uključite u razvoj projekta, kako bi učinili da aplikacija bude što korisnija svim studentima UNS-a.\n\nKatedra za informatiku.\nElektrotehnika i Računarstvo.\nFakultet Tehničkih Nauka, Univerzitet u Novom Sadu.\n
 
         \n\n
         2017©. Sva prava rezervisana. Univerzitet u Novom Sadu.
@@ -110,14 +110,18 @@ Univerzitet u Novom Sadu gradi svoju budućnost zajedno sa ostalim institucijama
     <string name="wp_administrative"> Administrativni radnik </string>
     <string name="wp_administrator"> Administrator </string>
     <string name="wp_spinner_prompt">Zanimanje</string>
-    <string name="insert_a_name">Insert a name</string>
-    <string name="insert_a_surname">Insert a surname</string>
-    <string name="search_people">Search</string>
+    <string name="insert_a_name">Unesite ime</string>
+    <string name="insert_a_surname">Unesite prezime</string>
+    <string name="search_people">Pretraga</string>
 
-    <string name="people_form_empty_message">Nothing to search by!</string>
-    <string name="title_activity_dormitories">Dormitories</string>
-    <string name="title_activity_dining">Dining</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="people_form_empty_message">Niste popunili polja za pretragu!</string>
+    <string name="title_activity_dormitories">Domovi</string>
+    <string name="title_activity_dining">Menze</string>
+    <string name="title_notifications">Obaveštenja</string>
+
+    <string name="people_search_no_results">Nema rezultata za date podatke!</string>
+    <string name="people_empty_form">Niste popunili polja za pretragu!</string>
+    <string name="locale">Lokal</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

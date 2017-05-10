@@ -20,7 +20,7 @@ The University of Novi Sad builds its future together with other institutions th
         ABOUT APPLICATION
     </string>
     <string name="about_application">
-        Mobile application which is able to provide necessary information to students and employees. Using this application you are able to find all relevant places and information related to campus.Feel free to contribute, project is open source, and it is available on: https://github.com/unsftn/unsmobile.\n\nIt is developed by Aleksandar Bosnjak and Nenad Todorovic.\nChairs of Informatics.\nElectrical and computing department.\nFaculty Of Technical Sciences, University Of Novi Sad.\n
+        A mobile application which provides necessary information to students and employees. Using this application you can find all relevant places and information related to campus.Feel free to contribute, project is open source.\nChairs of Informatics.\nElectrical and computing department.\nFaculty Of Technical Sciences, University Of Novi Sad.\n
 
         \n\n
         2017©. All rights reserved. University of Novi Sad.
@@ -74,18 +74,16 @@ The University of Novi Sad builds its future together with other institutions th
     <string name="vote_title"><u>Vote for best <b>project</b>:</u></string>
     <string name="results_title">Results:</string>
 
-    <string name="address_book_header">Pretražite kontakte osoblja univerziteta.</string>
+    <string name="address_book_header">Search university staff</string>
     <string name="address_book_text">
         <![CDATA[
             <html>
              <head></head>
              <body style="text-align:justify;color:black;font-size:18;">
-              Broj centrale: (+381 21) 485-2000<br/>
-              Svim brojevima lokala sa telefonske
-              centrale Univerziteta, osim lokala
-              koji počinju cifrom 5, može se
-              direktno pristupiti dodavanjem
-              prefiksa 485 ispred broja lokala.
+              Number of Switchboard: (+381 21) 485-2000<br/>
+              All locale numbers can be reached from university
+              switchboard, except for the numbers that start with number
+              5, by adding 485 as a prefix.
              </body>
             </html>
         ]]>
@@ -113,5 +111,11 @@ The University of Novi Sad builds its future together with other institutions th
     <string name="insert_a_surname">Insert a surname</string>
     <string name="search_people">Search</string>
 
-    <string name="people_form_empty_message">Nothing to search by!</string>
+    <string name="title_activity_dormitories">Dormitories</string>
+    <string name="title_activity_dining">Dining</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="people_form_empty_message">No results have been found for given data!</string>
+    <string name="people_empty_form">Nothing to search by!</string>
+    <string name="locale">Locale</string>
 </resources>
