@@ -17,13 +17,14 @@ public class CompetitorsContent {
      * An array of sample (dummy) items.
      */
     public static List<Competitor> ITEMS = new ArrayList<Competitor>();
+    public static boolean HAS_VOTED = false;
 
     /**
      * A map of sample (dummy) items, by ID.
      */
     public static final Map<String, Competitor> ITEM_MAP = new HashMap<String, Competitor>();
 
-    private static final int COUNT = 25;
+    private static final int COUNT = 1;
 
     static {
         // Add some sample items.

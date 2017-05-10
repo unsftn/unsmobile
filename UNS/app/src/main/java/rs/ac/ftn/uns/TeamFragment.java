@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
@@ -27,6 +28,7 @@ import java.util.List;
 
 import rs.ac.ftn.uns.model.Competitor;
 import rs.ac.ftn.uns.model.CompetitorsContent;
+import rs.ac.ftn.uns.model.Vote;
 import rs.ac.ftn.uns.utils.NetworkHelper;
 
 /**
@@ -90,12 +92,11 @@ public class TeamFragment extends Fragment {
             } else {
                 recyclerView.setLayoutManager(new GridLayoutManager(context, mColumnCount));
             }
-            recyclerView.setAdapter(new MyTeamRecyclerViewAdapter(CompetitorsContent.ITEMS, mListener));
+            recyclerView.setAdapter(new MyTeamRecyclerViewAdapter(CompetitorsContent.ITEMS));
             this.adapter = recyclerView;
         }
         return view;
     }
-
 
     @Override
     public void onAttach(Context context) {
@@ -141,6 +142,8 @@ public class TeamFragment extends Fragment {
 
             } catch (IOException e) {
                 e.printStackTrace();
+            } catch (Exception e) {
+                e.printStackTrace();
             }
 
             return result;
@@ -151,58 +154,53 @@ public class TeamFragment extends Fragment {
             updateCompetitorsList(result);
 
             if(result != null && !result.equals("")){
-                Toast.makeText(getActivity(), "Pa, reklo bi se da je uspelo :)",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), "Uspešno učitani timovi.",Toast.LENGTH_SHORT).show();
                 Log.i("Mahab", result);
+            } else {
+                Toast.makeText(getActivity(), "Došlo je do problema prilikom učitavanja takmičara.",Toast.LENGTH_SHORT).show();
             }
         }
 
         private void updateCompetitorsList(String result) {
             String teams = null;
-            ArrayList<Competitor> competitors = new ArrayList<>();
+            String votes = null;
+            JSONObject activePoll = null;
             JSONObject jsonResult = null;
 
             try {
                 jsonResult = new JSONObject(result);
                 teams = jsonResult.getString("teams");
+                votes = jsonResult.getString("vote");
+                activePoll = jsonResult.getJSONObject("pollActive");
+
+                if(activePoll.getString("itHas").equals("false")) {
+                    Toast.makeText(getActivity(), "Glasanje je završeno.",Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                if(votes != null && votes.equals("null")) {
+                    CompetitorsContent.HAS_VOTED = false;
+                } else {
+                    CompetitorsContent.HAS_VOTED = true;
+                }
+
             } catch (JSONException e) {
                 e.printStackTrace();
-            }
-
-            Gson gson = new Gson();
-            Type listType = new TypeToken<List<Competitor>>(){}.getType();
-            competitors = (ArrayList<Competitor>) gson.fromJson(teams, listType);
-
-            CompetitorsContent.ITEMS = competitors;
-            adapter.setAdapter(new MyTeamRecyclerViewAdapter(competitors));
-            adapter.invalidate();
-        }
-
-    }
-    /*
-    public class HttpPostVoteTask extends AsyncTask<String, Void, String> {
-        @Override
-        protected String doInBackground(String... params){
-            String candidate_id = params[0];
-            String voter_id = params[1];
-
-
-            String JSON = NetworkHelper.buildVoteJSON(candidate_id, voter_id);
-            String result = null;
-            try{
-                result = NetworkHelper.postVote(JSON);
-            } catch (IOException e) {
+            } catch (Exception e) {
                 e.printStackTrace();
             }
 
-            return result;
-        }
-
-        @Override
-        protected void onPostExecute(String s){
-            if(s != null && !s.equals("")){
-                Toast.makeText(VotingActivity.this, "Pa, reklo bi se da si glasao:)",Toast.LENGTH_SHORT).show();
-                Log.i("Mahab", s);
+            if(teams != null) {
+                Gson gson = new Gson();
+                Type listType = new TypeToken<List<Competitor>>() {
+                }.getType();
+                CompetitorsContent.ITEMS = (ArrayList<Competitor>) gson.fromJson(teams, listType);
             }
+            if(votes != null && votes != "" && !votes.equals("null")) {
+                Toast.makeText(getActivity(), "Glasanje onemogućeno, vaš glas je već zabeležen.",Toast.LENGTH_SHORT).show();
+            }
+
+            new HttpGetVoteResultsTask().execute();
         }
 
     }
@@ -222,13 +220,27 @@ public class TeamFragment extends Fragment {
         }
 
         @Override
-        protected void onPostExecute(String s){
-            if(s != null && !s.equals("")){
-                Toast.makeText(VotingActivity.this, "Pa, reklo bi se da si glasao:)",Toast.LENGTH_SHORT).show();
-                Log.i("Mahab", s);
+        protected void onPostExecute(String s) {
+            ArrayList<Vote> votes = null;
+
+            if (s != null) {
+                Gson gson = new Gson();
+                Type listType = new TypeToken<List<Vote>>() {
+                }.getType();
+                votes = (ArrayList<Vote>) gson.fromJson(s, listType);
+
+                for(Vote v: votes) {
+                    for(Competitor c: CompetitorsContent.ITEMS) {
+                        if(c.id.equals(v.candidateId)) {
+                            c.votesCount = v.countNum;
+                        }
+                    }
+                }
+                adapter.setAdapter(new MyTeamRecyclerViewAdapter(CompetitorsContent.ITEMS, mListener));
+                adapter.invalidate();
             }
         }
 
     }
-    */
+
 }

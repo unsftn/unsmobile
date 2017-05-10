@@ -30,6 +30,7 @@ import rs.ac.ftn.uns.utils.NetworkHelper;
 public class ScienceFestivalActivity extends AppCompatActivity implements OnListFragmentInteractionListener{
 
     private TextView mTextMessage;
+    private Competitor currentCompetitor;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -40,14 +41,12 @@ public class ScienceFestivalActivity extends AppCompatActivity implements OnList
                 case R.id.competitors:
                     mTextMessage.setText(R.string.vote_title);
                     return true;
-                case R.id.results:
-                    mTextMessage.setText(R.string.results_title);
-                    return true;
             }
             return false;
         }
 
     };
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,6 +60,51 @@ public class ScienceFestivalActivity extends AppCompatActivity implements OnList
 
     @Override
     public void onListFragmentInteraction(Competitor item) {
+        String android_id = Settings.Secure.getString(getBaseContext().getContentResolver(),
+                Settings.Secure.ANDROID_ID);
+        this.currentCompetitor = item;
+
+        if(!CompetitorsContent.HAS_VOTED) {
+            new HttpPostVoteTask().execute(item.id, android_id);
+        } else {
+            Toast.makeText(ScienceFestivalActivity.this, "Glasanje onemogućeno, vaš glas je već zabeležen.",Toast.LENGTH_SHORT).show();
+        }
+
+        //Toast.makeText(ScienceFestivalActivity.this, item.toString(), Toast.LENGTH_SHORT).show();
+    }
+
+    public class HttpPostVoteTask extends AsyncTask<String, Void, String> {
+        @Override
+        protected String doInBackground(String... params){
+            String candidate_id = params[0];
+            String voter_id = params[1];
+            String result = null;
+
+            try{
+
+            String JSON = NetworkHelper.buildVoteJSON(candidate_id, voter_id);
+
+                result = NetworkHelper.postVote(JSON);
+            } catch (IOException e) {
+                e.printStackTrace();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+            return result;
+        }
+
+        @Override
+        protected void onPostExecute(String s){
+            if(s != null && !s.equals("")){
+                Toast.makeText(ScienceFestivalActivity.this, "Vaš glas za:" + currentCompetitor.projectName + " je uspešno zabeležen, hvala!",Toast.LENGTH_LONG).show();
+                CompetitorsContent.HAS_VOTED = true;
+                MyTeamRecyclerViewAdapter.currentView.setBackgroundColor(0x9664DD17);
+            } else {
+                Toast.makeText(ScienceFestivalActivity.this, "Došlo je do greške prlikom glasanja.",Toast.LENGTH_SHORT).show();
+            }
+            Log.i("Mahab", s);
+        }
 
     }
 

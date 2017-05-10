@@ -14,6 +14,17 @@
         android:textAppearance="?attr/textAppearanceListItem"
         android:textColor="@android:color/white"/>
 
+    <TextView
+        android:id="@+id/votes_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="30"
+        android:textColor="@color/votedColor"
+        android:layout_gravity="left|bottom"
+        android:textAppearance="?attr/textAppearanceListItem" />
+
     <ImageView
         android:layout_width="45dp"
         android:layout_height="50dp"
@@ -24,6 +35,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" />
 
         <TextView
             android:id="@+id/content"

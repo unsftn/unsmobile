@@ -10,7 +10,7 @@ public class Competitor {
     public String projectName;
     public String projectDesc;
     public String researchField;
-    public int votesCount;
+    public int votesCount = -1;
 
     public Competitor(String id, String teamName, String researchField, String projectName, String projectDesc) {
         this.id = id;
@@ -18,6 +18,7 @@ public class Competitor {
         this.projectName = projectName;
         this.projectDesc = projectDesc;
         this.researchField = researchField;
+        this.votesCount = -1;
     }
 
     @Override

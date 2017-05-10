@@ -6,9 +6,4 @@
         android:icon="@drawable/ic_brainstorm"
         android:title="@string/voting_title" />
 
-    <item
-        android:id="@+id/results"
-        android:icon="@drawable/ic_trophy"
-        android:title="@string/results_title" />
-
 </menu>
