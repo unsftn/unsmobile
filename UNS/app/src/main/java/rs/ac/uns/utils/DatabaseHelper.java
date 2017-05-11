@@ -2653,7 +2653,7 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
             }
 
 
-            if(institution != null && !institution.equals("-- Svi fakulteti --") && !institution.equals("-- All fakulties --")){
+            if(institution != null && !institution.equals("-- Svi fakulteti --") && !institution.equals("-- All faculties --")){
 
                 if(!first) {
                     where.and();

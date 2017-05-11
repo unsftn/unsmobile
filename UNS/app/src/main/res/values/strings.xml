@@ -53,6 +53,7 @@ Univerzitet u Novom Sadu gradi svoju budućnost zajedno sa ostalim institucijama
     <string name="pupin_title">Tehnički fakultet „Mihajlo Pupin”</string>
     <string name="dif_title">Fakultet sporta i fizičkog vaspitanja</string>
     <string name="education_title">Pedagoški fakultet</string>
+    <string name="edu_hun_title">Učiteljski fakultet na mađarskom jeziku</string>
     <string name="open_bus_routes_map">Mapa autobuskih ruta</string>
     <string name="faculties">Fakulteti</string>
     <string name="bus_routes">Autobuske rute</string>
@@ -102,7 +103,7 @@ Univerzitet u Novom Sadu gradi svoju budućnost zajedno sa ostalim institucijama
     <string name="i_tf">Tehnološki fakultet</string>
     <string name="i_efsu">Ekonomski fakultet - Subotica</string>
     <string name="i_ipt">Institut za prehrambene tehnologije</string>
-    <string name="i_edu_hun">Učiteljski fakultet na Mađarskom jeziku</string>
+    <string name="i_edu_hun">Učiteljski fakultet na mađarskom jeziku</string>
     <string name="i_spinner_prompt">Institucija</string>
 
 
@@ -131,4 +132,16 @@ Univerzitet u Novom Sadu gradi svoju budućnost zajedno sa ostalim institucijama
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_maps">Map</string>
+
+    <string name="vote_r_u_sure">Da li ste sigurni da želite da glasate za</string>
+    <string name="vote_yes">Da</string>
+    <string name="vote_no">Ne</string>
+
+    <string name="voted_already">Vaš glas je već zabeležen.</string>
+    <string name="vote_success_I">Vaš glas za</string>
+    <string name="vote_success_II">je uspešno zabeležen, hvala!</string>
+    <string name="vote_failure">Došlo je do greške prlikom glasanja.</string>
+    <string name="change_localization">Restartujte aplikaciju kako bi izmene bile primenjene.\n
+        You need to restart application for the changes to take effect.
+    </string>
 </resources>

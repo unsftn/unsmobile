@@ -54,6 +54,7 @@ The University of Novi Sad builds its future together with other institutions th
     <string name="pupin_title">"Mihajlo Pupin" Technical Faculty in Zrenjanin</string>
     <string name="dif_title">Faculty of Sport and Physical Education</string>
     <string name="education_title">Faculty of Education</string>
+    <string name="edu_hun_title">Teacher training faculty in the Hungarian language</string>
     <string name="open_bus_routes_map">Open bus routes map</string>
     <string name="faculties">Faculties</string>
     <string name="bus_routes">Bus routes</string>
@@ -94,7 +95,7 @@ The University of Novi Sad builds its future together with other institutions th
         ]]>
     </string>
 
-    <string name="i_blank"> -- All fakulties -- </string>
+    <string name="i_blank"> -- All faculties -- </string>
     <string name="i_university">Univerzitet u Novom Sadu</string>
     <string name="i_pmf">Prirodno-matematički fakultet</string>
     <string name="i_ftn">Fakultet tehničkih nauka</string>
@@ -128,4 +129,16 @@ The University of Novi Sad builds its future together with other institutions th
     <string name="team_fetch_failure">Teams could not be loaded.</string>
     <string name="poll_has_ended">The poll has ended.</string>
     <string name="already_voted">You have already voted.</string>
+
+    <string name="vote_r_u_sure">Are You sure that You want to vote for</string>
+    <string name="vote_yes">Yes</string>
+    <string name="vote_no">No</string>
+
+    <string name="voted_already">You have already voted.</string>
+    <string name="vote_success_I">Your vote for</string>
+    <string name="vote_success_II">has been successfully recorded, thank You!</string>
+    <string name="vote_failure">An error occurred.</string>
+    <string name="change_localization">Restartujte aplikaciju kako bi izmene bile primenjene.\n
+        You need to restart application for the changes to take effect.
+    </string>
 </resources>

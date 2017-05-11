@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 import java.util.Locale;
 
@@ -95,16 +96,20 @@ public class MainActivity extends AppCompatActivity {
             getBaseContext().getResources().updateConfiguration(config,
                     getBaseContext().getResources().getDisplayMetrics());
 
+            /*
             setContentView(R.layout.activity_main);
             Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
             setSupportActionBar(toolbar);
+            */
 
             SharedPreferences.Editor editor = sharedPreferences.edit();
             editor.putString(localization, language_locale_en);
             editor.commit();
-            initListeners();
+            //initListeners();
 
-            updateOptionsMenu();
+            //updateOptionsMenu();
+
+            Toast.makeText(MainActivity.this, getResources().getString(R.string.change_localization),Toast.LENGTH_SHORT).show();
 
             return true;
         }
@@ -117,16 +122,19 @@ public class MainActivity extends AppCompatActivity {
             getBaseContext().getResources().updateConfiguration(config,
                     getBaseContext().getResources().getDisplayMetrics());
 
+            /*
             setContentView(R.layout.activity_main);
             Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
             setSupportActionBar(toolbar);
-
+            */
             SharedPreferences.Editor editor = sharedPreferences.edit();
             editor.putString(localization, language_locale_sr);
             editor.commit();
-            initListeners();
+            //initListeners();
 
-            updateOptionsMenu();
+            //updateOptionsMenu();
+
+            Toast.makeText(MainActivity.this, getResources().getString(R.string.change_localization),Toast.LENGTH_SHORT).show();
 
             return true;
         }

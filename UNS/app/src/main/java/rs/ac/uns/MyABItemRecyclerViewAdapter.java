@@ -41,7 +41,11 @@ public class MyABItemRecyclerViewAdapter extends RecyclerView.Adapter<MyABItemRe
                 ((SearchedPeopleActivity)mListener).getResources().getString(R.string.locale)+
                 ": " + mValues.get(position).getLocale();
         holder.mIdView.setText(fullName);
-        String workPlace = mValues.get(position).getInstitution() +" - " + mValues.get(position).getWork_place();
+        String workPlace = mValues.get(position).getInstitution();
+        if(!mValues.get(position).getWork_place().equals("Nepoznato")) {
+            workPlace += " - " + mValues.get(position).getWork_place();
+        }
+
         holder.mContentView.setText(workPlace);
 
         holder.mView.setOnClickListener(new View.OnClickListener() {

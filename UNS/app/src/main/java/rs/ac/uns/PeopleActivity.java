@@ -74,7 +74,7 @@ public class PeopleActivity extends AppCompatActivity {
                 String institution = sp_institution.getSelectedItem().toString();
 
                 if(name.trim().equals("") && surname.trim().equals("") &&
-                        (institution.equals("-- Svi fakulteti --") || institution.equals("-- All fakulties --"))){
+                        (institution.equals("-- Svi fakulteti --") || institution.equals("-- All faculties --"))){
 
                     Toast.makeText(PeopleActivity.this, getResources().getString(R.string.people_empty_form), Toast.LENGTH_SHORT).show();
 

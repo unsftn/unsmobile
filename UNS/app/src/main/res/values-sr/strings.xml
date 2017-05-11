@@ -53,6 +53,7 @@ Univerzitet u Novom Sadu gradi svoju budućnost zajedno sa ostalim institucijama
     <string name="pupin_title">Tehnički fakultet „Mihajlo Pupin”</string>
     <string name="dif_title">Fakultet sporta i fizičkog vaspitanja</string>
     <string name="education_title">Pedagoški fakultet</string>
+    <string name="edu_hun_title">Učiteljski fakultet na mađarskom jeziku</string>
     <string name="open_bus_routes_map">Mapa autobuskih ruta</string>
     <string name="faculties">Fakulteti</string>
     <string name="bus_routes">Autobuske rute</string>
@@ -108,15 +109,9 @@ Univerzitet u Novom Sadu gradi svoju budućnost zajedno sa ostalim institucijama
     <string name="i_tf">Tehnološki fakultet</string>
     <string name="i_efsu">Ekonomski fakultet - Subotica</string>
     <string name="i_ipt">Institut za prehrambene tehnologije</string>
-    <string name="i_edu_hun">Učiteljski fakultet na Mađarskom jeziku</string>
+    <string name="i_edu_hun">Učiteljski fakultet na mađarskom jeziku</string>
     <string name="i_spinner_prompt">Institucija</string>
 
-    <string name="wp_blank"> -- Sva zanimanja -- </string>
-    <string name="wp_administrative"> Administrativni radnik </string>
-    <string name="wp_administrator"> Administrator </string>
-    <string name="wp_spinner_prompt">Zanimanje</string>
-    <string name="insert_a_name">Unesite ime</string>
-    <string name="insert_a_surname">Unesite prezime</string>
     <string name="search_people">Pretraga</string>
 
     <string name="locale">Lokal</string>
@@ -127,4 +122,24 @@ Univerzitet u Novom Sadu gradi svoju budućnost zajedno sa ostalim institucijama
     <string name="team_fetch_failure">Došlo je do problema prilikom učitavanja timova.</string>
     <string name="poll_has_ended">Glasanje je završeno.</string>
     <string name="already_voted">Vaš glas je već zabeležen.</string>
+    <string name="wp_blank"> -- Sva zanimanja -- </string>
+    <string name="wp_administrative"> Administrativni radnik </string>
+    <string name="wp_administrator"> Administrator </string>
+    <string name="wp_spinner_prompt">Zanimanje</string>
+    <string name="insert_a_name">Unesite ime</string>
+    <string name="insert_a_surname">Unesite prezime</string>
+
+    <string name="vote_r_u_sure">Da li ste sigurni da želite da glasate za</string>
+    <string name="vote_yes">Da</string>
+    <string name="vote_no">Ne</string>
+    <string name="voted_already">Vaš glas je već zabeležen.</string>
+    <string name="vote_success_I">Vaš glas za</string>
+    <string name="vote_success_II">je uspešno zabeležen, hvala!</string>
+
+    <string name="vote_failure">Došlo je do greške prlikom glasanja.</string>
+
+    <string name="change_localization">Restartujte aplikaciju kako bi izmene bile primenjene.\n
+        You need to restart application for the changes to take effect.
+    </string>
+
 </resources>
