@@ -69,7 +69,13 @@ Univerzitet u Novom Sadu gradi svoju budućnost zajedno sa ostalim institucijama
 
     <string name="rectory_title">UNS Rektorat</string>
     <string name="rectory_desc">Rektorat Univerziteta u Novom Sadu</string>
+    <string name="title_activity_dormitories">Domovi</string>
+    <string name="title_activity_dining">Menze</string>
+    <string name="title_notifications">Obaveštenja</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
 
+    <string name="people_form_empty_message">Niste popunili polja za pretragu!</string>
     <string name="voting_title">Glasaj</string>
     <string name="vote_title"><u>Glasaj za najbolji <b>projekat</b>:</u></string>
     <string name="results_title">Rezultati:</string>

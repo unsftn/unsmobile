@@ -1,4 +1,5 @@
 <resources>
+    <string name="app_name">UNS</string>
     <string name="about_university_title">
         MODERN UNIVERSITY THAT CONSISTS OF FOURTEEN FACULTIES IN FOUR HISTORIC CITIES OF CENTRAL EUROPE
     </string>
@@ -73,6 +74,10 @@ The University of Novi Sad builds its future together with other institutions th
     <string name="voting_title">Vote</string>
     <string name="vote_title"><u>Vote for best <b>project</b>:</u></string>
     <string name="results_title">Results:</string>
+    <string name="people_search_no_results">No matching results found!</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+
 
     <string name="address_book_header">Search university staff</string>
     <string name="address_book_text">
